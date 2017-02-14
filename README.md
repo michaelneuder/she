@@ -12,7 +12,9 @@
 	OpenCourse
 
 ## Project description:
-	A mobile and web app that keeps stores and organizes information about current courses. The app will contain a schedule for each class, 	along with storing a copy of the syllabus and other course materials made available by the instructor. The users can choose to recieve 	   	 notifications about exam dates, homework due dates, and other relevant information.
+	A mobile and web app that keeps stores and organizes information about current courses. The app will contain a schedule for each
+	class, along with storing a copy of the syllabus and other course materials made available by the instructor. The users can choose
+	to recieve notifications about exam dates, homework due dates, and other relevant information.
 
 ## Vision statement: 
 
