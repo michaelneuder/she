@@ -18,45 +18,39 @@
 	exam dates, homework due dates, and other relevant information.
 
 ## Vision statement: 
-	* All of your academics, in one place (feel free to change)
+	* All of your academics, in one place.
+	
 ## Motivation: for working on this particular project (Why would you develop this?)
 	Having a convenient mobile app which has homework assignments, handouts, and grades for all
 	classes will increase productivity. Can integrate the functionality of piazza, moodle, and d2l
 	for convinience of instructors and pupils alike.
+	
 ## Risks: to project completion 
 	* Most of the team is new to app and web development
 	* A scope of a mobile app and a web app could be too broad
 	* With 5 collaboraters, communication may prove to be difficult 
-
-
+	
 ## Mitigation strategy for dealing with the risk
 	* Sharing knowledge as we learn will accelerate the learning curve
 
 ## List of requirements: for the project
-
-    6 user stories
-    Each story must have a unique ID number
-    Written in the Agile format: “As a [role], I want to [do X] so that I can [benefit with Y]”
-    Each requirement must have a size. You have two options for sizing:
-        Agile sizing – story points
-        Time estimate to complete
-	
-
-    All stories should be sized to be completed in less than 8 hours (approximately, and something equivalent to a day or less in Agile story points). If your story is bigger than that, then break it up into smaller stories.
-    [optional] you can add priority (Critical, High, Med, Low, Nice-to-have)
-    [optional] you can add topic/area (e.g., Login, Profile, DB, etc.)
-    [optional] you can add user type (e.g., Admin, end user, potential customer,…)
-    
     Story #1: "As a student, I want to have all my course calenders in the same place, so that I can
-    check when my exams are." (idk is this what they are looking for?)
+    check when my exams are." (10 pts)
 
-    Story #2: "As an inteructor, I want my discussion forum, handouts and grades all in the same place for convinience."
+    Story #2: "As an instructor, I want handouts and grades all in the same place for convinience." (10 pts)
 
-    Story #3: "As a student, I want all my academic resources in one place so that I can form better study habits." (This one sucks but we can keep it if we need more)
+    Story #3: "As a student, I want all my academic resources together so that I can form better study habits." (40 pts)
+    
+    Story #4: "As a student, I want to easily check my current grades for all my classes." (5 pts)
+    
+    Story #5: "As a instructor, I want to easily see all the section discussions and be able to answer questions." (20 pts)
+    
+    Story #6: "As a TA, I want my section to have a group discussion about content and questions." (15 pts)
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
 	We plan on following a mix of Agile and waterfall, so we can better focus on developing particular
 	skillsets and applying them to the project.
+
 ## Project Tracking software:
 	BaseCamp
 
