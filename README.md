@@ -1,5 +1,5 @@
 # OpenCourse
-##Trying to make college somewhat more managable.
+## Trying to make college somewhat more managable.
 
 ## Team: 
 	Nischay Murthy (github: nmurthy9)
@@ -40,25 +40,22 @@
     Each requirement must have a size. You have two options for sizing:
         Agile sizing – story points
         Time estimate to complete
+	
 
     All stories should be sized to be completed in less than 8 hours (approximately, and something equivalent to a day or less in Agile story points). If your story is bigger than that, then break it up into smaller stories.
     [optional] you can add priority (Critical, High, Med, Low, Nice-to-have)
     [optional] you can add topic/area (e.g., Login, Profile, DB, etc.)
     [optional] you can add user type (e.g., Admin, end user, potential customer,…)
+    
+    Story #1: "As a student, I want to have all my course calenders in the same place, so that I can
+    check when my exams are." (idk is this what they are looking for?)
 
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
 	We plan on following a mix of Agile and waterfall, so we can better focus on developing particular
 	skillsets and applying them to the project.
 ## Project Tracking software:
-
-    Name of the software you will use
-        Trello is most common
-        Pivotal Tracker
-        *Basecamp
-        GitHub Issues & Milestones
-    Link to project tracking software: make sure instructor and TAs have access
-    Be sure to continue to use this throughout the semester! Even though these are small projects, the point is to practice the methodologies and tools used in industry!
+	BaseCamp
 
 ## Project plan: created from your Project Tracking software. Copy-paste the plan (or screenshot of) from your project tracking software into the repository
 
