@@ -3,7 +3,7 @@
 
 ## Team: 
 	Nischay Murthy (github: nmurthy9)
-	Nick Zimmer
+	Nick Zimmer (github: nzimm)
 	Bum Kim  (github: bumshakabum)
 	Alex Ubanski
 	Michael Neuder (github: michaelneuder)
@@ -12,23 +12,24 @@
 	OpenCourse
 
 ## Project description:
-	A mobile and web app that keeps stores and organizes information about current courses. The app will contain a schedule for each
-	class, along with storing a copy of the syllabus and other course materials made available by the instructor. The users can choose
-	to recieve notifications about exam dates, homework due dates, and other relevant information.
+	A mobile and web app that stores and organizes information about current courses. The app will
+	contain a schedule for each class, along with storing a copy of the syllabus and other course
+	materials made available by the instructor. The users can choose to recieve notifications about
+	exam dates, homework due dates, and other relevant information.
 
 ## Vision statement: 
-
+	* All of your academics, in one place (feel free to change)
 ## Motivation: for working on this particular project (Why would you develop this?)
-
-## Risks: to project completion (these could include:
-
-    Working environment or language new to some team members,
-    No prior experience working with the people on the team,
-    Lack of availability of some needed resource, etc.)
+	Having a convenient mobile app which has homework assignments, handouts, and grades for all
+	classes will increase productivity. Can integrates the functionallity of piazza, moodle, and d2l
+	for convinience of instructors and pupils alike.
+## Risks: to project completion 
+	* Most of the team is new to app and web development
+	* A scope of a mobile app and a web app could be too broad
 
 
 ## Mitigation strategy for dealing with the risk
-
+	* Sharing knowledge as we learn will accelerate the learning curve
 
 ## List of requirements: for the project
 
@@ -46,7 +47,8 @@
 
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
-
+	We plan on following a mix of Agile and iterfall, so we may better focus on developing particular
+	skillsets and applying them to the project.
 ## Project Tracking software:
 
     Name of the software you will use
