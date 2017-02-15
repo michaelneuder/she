@@ -21,11 +21,12 @@
 	* All of your academics, in one place (feel free to change)
 ## Motivation: for working on this particular project (Why would you develop this?)
 	Having a convenient mobile app which has homework assignments, handouts, and grades for all
-	classes will increase productivity. Can integrates the functionallity of piazza, moodle, and d2l
+	classes will increase productivity. Can integrate the functionality of piazza, moodle, and d2l
 	for convinience of instructors and pupils alike.
 ## Risks: to project completion 
 	* Most of the team is new to app and web development
 	* A scope of a mobile app and a web app could be too broad
+	* With 5 collaboraters, communication may prove to be difficult 
 
 
 ## Mitigation strategy for dealing with the risk
@@ -47,14 +48,14 @@
 
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
-	We plan on following a mix of Agile and iterfall, so we may better focus on developing particular
+	We plan on following a mix of Agile and waterfall, so we can better focus on developing particular
 	skillsets and applying them to the project.
 ## Project Tracking software:
 
     Name of the software you will use
         Trello is most common
         Pivotal Tracker
-        Basecamp
+        *Basecamp
         GitHub Issues & Milestones
     Link to project tracking software: make sure instructor and TAs have access
     Be sure to continue to use this throughout the semester! Even though these are small projects, the point is to practice the methodologies and tools used in industry!
