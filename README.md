@@ -50,6 +50,9 @@
     Story #1: "As a student, I want to have all my course calenders in the same place, so that I can
     check when my exams are." (idk is this what they are looking for?)
 
+    Story #2: "As an inteructor, I want my discussion forum, handouts and grades all in the same place for convinience."
+
+    Story #3: "As a student, I want all my academic resources in one place so that I can form better study habits." (This one sucks but we can keep it if we need more)
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
 	We plan on following a mix of Agile and waterfall, so we can better focus on developing particular
