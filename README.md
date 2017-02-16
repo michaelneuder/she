@@ -20,7 +20,7 @@
 	other. Who knows, maybe you will find a connection!
 
 ## Vision statement: 
-	* To create the perfect girlfriend.
+	To give users the appearance of having a significant other, and provide companionship to them.
 	
 ## Motivation: for working on this particular project (Why would you develop this?)
 	Having a girlfriend without all the hassle of interacting with them in real life.
@@ -34,17 +34,19 @@
 	* Sharing knowledge as we learn will accelerate the learning curve
 
 ## List of requirements: for the project
-    Story #1: "As a lonely man, I want some interaction no matter how fake." (10 pts)
+    Story #1: "As a lonely man, I want some interaction no matter how fake." (20 pts)
 
-    Story #2: "As a parent I want my son to have a girlfriend." (10 pts)
+    Story #2: "As a parent I want to see my son posting pictures with his girlfriend." (40 pts)
 
-    Story #3: "As a son, I want my parents to think I have a girlfriend." (40 pts)
+    Story #3: "As a son, I want my parents to think I have a girlfriend." (10 pts)
     
-    Story #4: "As a 20-something, I want to impress my friends with the fact that I have a girlfriend." (5 pts)
+    Story #4: "As a 20-something, I want to impress my friends with the fact that 
+    I have a girlfriend." (10 pts)
     
-    Story #5: "As a instructor, I want to easily see all the section discussions and be able to answer questions." (20 pts)
+    Story #5: "As a lonely individual, I want to have someone to talk to." (100 pts)
     
-    Story #6: "As a TA, I want my section to have a group discussion about content and questions." (15 pts)
+    Story #6: "As a lonely individual, I want it to appear like I have a girlfriend on 
+    social media." (15 pts)
 
 ## Methodology: Which methodology you plan to follow, though it may change: Waterfall, iterfall, Agile, mash-up of …
 	We plan on following a mix of Agile and waterfall, so we can better focus on developing particular
