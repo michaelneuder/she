@@ -58,7 +58,7 @@
 
 ## Project plan: created from your Project Tracking software. Copy-paste the plan (or screenshot of) from your project tracking software into the repository
 
-![plan pic](plan.png)
+![plan pic](/images/plan.png)
 Format: ![Alt Text](url)
 
 
