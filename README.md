@@ -5,7 +5,7 @@
 	Nischay Murthy (github: nmurthy9)
 	Nick Zimmer (github: nzimm)
 	Bum Kim  (github: bumshakabum)
-	Alex Ubanski (github: aurbanski)
+	Alex Urbanski (github: aurbanski)
 	Michael Neuder (github: michaelneuder)
 
 ## Project title:
@@ -40,7 +40,7 @@
 
     Story #3: "As a son, I want my parents to think I have a girlfriend." (40 pts)
     
-    Story #4: "As a student, I want to easily check my current grades for all my classes." (5 pts)
+    Story #4: "As a 20-something, I want impress my friends with the fact that I have a girlfriend." (5 pts)
     
     Story #5: "As a instructor, I want to easily see all the section discussions and be able to answer questions." (20 pts)
     
