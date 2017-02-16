@@ -6,7 +6,7 @@
 	Nick Zimmerer, Public Relations Representative (github: nzimm)
 	Bum Kim, Quality Assurance Manager (github: bumshakabum)
 	Alex Urbanski, Human Resources (github: aurbanski)
-	Michael Neuder, Cheif Visionary (github: michaelneuder)
+	Michael Neuder, Chief Visionary (github: michaelneuder)
 
 ## Project title:
 	she
