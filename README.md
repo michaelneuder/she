@@ -9,7 +9,7 @@
 	Michael Neuder (github: michaelneuder)
 
 ## Project title:
-	hey-sophie
+	giREALfriend
 
 ## Project description:
 	Do you ever get tired of being asked if you are still single? Are your parents waiting anxiously for you to bring someone home? 
