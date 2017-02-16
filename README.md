@@ -1,4 +1,4 @@
-# OpenCourse
+# giREALfriend
 ## Trying to make college somewhat more managable.
 
 ## Team: 
@@ -9,21 +9,21 @@
 	Michael Neuder (github: michaelneuder)
 
 ## Project title:
-	OpenCourse
+	hey-sophie
 
 ## Project description:
-	A mobile and web app that stores and organizes information about current courses. The app will
-	contain a schedule for each class, along with storing a copy of the syllabus and other course
-	materials made available by the instructor. The users can choose to recieve notifications about
-	exam dates, homework due dates, and other relevant information.
+	Do you ever get tired of being asked if you are still single? Are your parents waiting anxiously for you to bring someone home? 
+	Are your friends pestering you to find someone? Then giREALfriend is the app for you! This mobile and web app will simulate a
+	girlfriend by creating fake social media accounts for our users. The user will recieve photos, texts, phone calls, snapchats, etc.
+	from this virtual girlfriend. A trick so convincing everyone will believe that she is real. Take it one step farther and become a 
+	premium member to request in person appearances at family events or parties, where other users will pretend to be your significant 
+	other. Who knows, maybe you will find a connection!
 
 ## Vision statement: 
-	* All of your academics, in one place.
+	* To create the perfect girldfriend.
 	
 ## Motivation: for working on this particular project (Why would you develop this?)
-	Having a convenient mobile app which has homework assignments, handouts, and grades for all
-	classes will increase productivity. Can integrate the functionality of piazza, moodle, and d2l
-	for convinience of instructors and pupils alike.
+	Having a girlfriend without all the hassle of interacting with them in real life.
 	
 ## Risks: to project completion 
 	* Most of the team is new to app and web development
@@ -34,12 +34,11 @@
 	* Sharing knowledge as we learn will accelerate the learning curve
 
 ## List of requirements: for the project
-    Story #1: "As a student, I want to have all my course calenders in the same place, so that I can
-    check when my exams are." (10 pts)
+    Story #1: "As a lonely man, I want some interaction no matter how fake." (10 pts)
 
-    Story #2: "As an instructor, I want handouts and grades all in the same place for convinience." (10 pts)
+    Story #2: "As a parent I want my son to have a girlfriend." (10 pts)
 
-    Story #3: "As a student, I want all my academic resources together so that I can form better study habits." (40 pts)
+    Story #3: "As a son, I want my parents to think I have a girlfriend." (40 pts)
     
     Story #4: "As a student, I want to easily check my current grades for all my classes." (5 pts)
     
