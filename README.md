@@ -1,4 +1,4 @@
-# giREALfriend
+# she
 ## Trying to make college somewhat more managable.
 
 ## Team: 
