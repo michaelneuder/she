@@ -1,5 +1,5 @@
 # she
-## Trying to make college somewhat more managable.
+## Relationship simplified.
 
 ## Team: 
 	Nischay Murthy (github: nmurthy9)
