@@ -3,9 +3,13 @@
 
 ## Team: 
 Nischay Murthy, Executive Program Analyst (github: nmurthy9)
+
 Nick Zimmerer, Public Relations Representative (github: nzimm)
+
 Bum Kim, Quality Assurance Manager (github: bumshakabum)
+
 Alex Urbanski, Human Resources (github: aurbanski)
+
 Michael Neuder, Chief Visionary (github: michaelneuder)
 
 ## Project title:
@@ -25,6 +29,7 @@ to be your significant other. Who knows, maybe you will find a connection!
 
 ## Vision statement: 
 1) The freedom of being single, with the social status of being taken.
+
 2) To give users the appearance of having a significant other, and provide
 companionship to them.
 	
@@ -66,8 +71,10 @@ parents into thinking I am socially competent." (60pts - set up a platform to
 support pairing people who want free food with someone who needs a temporary
 'significant other.')
 
-## Methodology: Which methodology you plan to follow, though it may change:
-Waterfall, iterfall, Agile, mash-up of …  We plan on following a mix of Agile
+Methodology: Which methodology you plan to follow, though it may change:
+Waterfall, iterfall, Agile, mash-up of …
+================================================================================
+We plan on following a mix of Agile
 and waterfall, so we can better focus on developing particular skillsets and
 applying them to the project.
 
