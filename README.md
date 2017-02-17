@@ -71,14 +71,14 @@ parents into thinking I am socially competent." (60pts - set up a platform to
 support pairing people who want free food with someone who needs a temporary
 'significant other.')
 
-Methodology: Which methodology you plan to follow, though it may change:
-Waterfall, iterfall, Agile, mash-up of …
-================================================================================
+# Methodology: Which methodology you plan to follow, though it may change:
+Waterfall, iterfall, Agile, mash-up of … #
 We plan on following a mix of Agile and waterfall, so we can better focus on
 developing particular skillsets and applying them to the project.
 
 ## Project Tracking software:
 BaseCamp
+
 https://3.basecamp.com/3670469/projects/2748839
 
 ## Project plan: created from your Project Tracking software. Copy-paste the
