@@ -2,15 +2,11 @@
 ## Relationship simplified.
 
 ## Team: 
-Nischay Murthy, Executive Program Analyst (github: nmurthy9)
-
-Nick Zimmerer, Public Relations Representative (github: nzimm)
-
-Bum Kim, Quality Assurance Manager (github: bumshakabum)
-
-Alex Urbanski, Human Resources (github: aurbanski)
-
-Michael Neuder, Chief Visionary (github: michaelneuder)
+Nischay Murthy, Executive Program Analyst (github: nmurthy9)  
+Nick Zimmerer, Public Relations Representative (github: nzimm)  
+Bum Kim, Quality Assurance Manager (github: bumshakabum)  
+Alex Urbanski, Human Resources (github: aurbanski)  
+Michael Neuder, Chief Visionary (github: michaelneuder)  
 
 ## Project title:
 she
@@ -28,10 +24,9 @@ person appearances at family events or parties, where other users will pretend
 to be your significant other. Who knows, maybe you will find a connection!
 
 ## Vision statement: 
-1) The freedom of being single, with the social status of being taken.
-
+1) The freedom of being single, with the social status of being taken.  
 2) To give users the appearance of having a significant other, and provide
-companionship to them.
+companionship to them.  
 	
 ## Motivation: for working on this particular project (Why would you develop this?)
 Provide the illusion of a girlfriend without requiring any real-life interaction
