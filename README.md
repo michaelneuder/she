@@ -74,9 +74,8 @@ support pairing people who want free food with someone who needs a temporary
 Methodology: Which methodology you plan to follow, though it may change:
 Waterfall, iterfall, Agile, mash-up of …
 ================================================================================
-We plan on following a mix of Agile
-and waterfall, so we can better focus on developing particular skillsets and
-applying them to the project.
+We plan on following a mix of Agile and waterfall, so we can better focus on
+developing particular skillsets and applying them to the project.
 
 ## Project Tracking software:
 BaseCamp
