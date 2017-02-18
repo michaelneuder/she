@@ -346,15 +346,15 @@ body{
 	overflow:hidden;
 	float:left;
 }
-.footer ul li:first-child a{
+/*.footer ul li:first-child a{
 	border:none;
 	padding:0 6px 0 0;
-}
+}*/
 .footer ul li{
 	float:left;
 }
 .footer ul li a:hover{
-	color:#F78117;
+	color: rgb(225,51,140);
 }
 .footer ul li a{
 	border-width: 1px;
