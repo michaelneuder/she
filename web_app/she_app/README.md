@@ -1,9 +1,15 @@
 # README
 
 ## To Run
-### 1)pull from git
-### 2)go into she_app directory
-### 3)run $bundle install
-### 4)run $bin/rails server
+### 1) Pull from github, just to make sure everything is up to date
+### 2) Go into she_app directory. This is the directory for the app
+### 3) Run
+```
+$bundle install
+```
+### 4) Run
+```
+$bin/rails server
+```
 
 ## Also Hosted on Heroku
