@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <ul>
+      <li>
+        <%= link_to "Home", root_url, class: 'nav-button' %>
+      </li>
+      <li>
+        <%= link_to "About", class: 'nav-button' %>
+      </li>
+    </ul>
     <%= yield %>
   </body>
 </html>
