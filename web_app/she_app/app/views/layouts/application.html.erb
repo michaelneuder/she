@@ -9,14 +9,21 @@
   </head>
 
   <body>
-    <ul>
-      <li>
-        <%= link_to "Home", root_url, class: 'nav-button' %>
-      </li>
-      <li>
-        <%= link_to "About", class: 'nav-button' %>
-      </li>
-    </ul>
+    <div class="navbar">
+      <div class="logo">
+        <h1>She</h1>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <%= link_to "Home", root_path, class: 'nav-button' %>
+          </li>
+          <li class="right-link">
+            <%= link_to "About", about_path, class: 'nav-button' %>
+          </li>
+        </ul>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

@@ -1,19 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Quattrocento');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 
 body{
-  font-family: 'Quattrocento', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
-ul {
-  list-style-type: none;
+.row {
+  padding-top: 40px;
+}
+
+.navbar {
+  background-color: black;
+  height: 40px;
+  width: 100%;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    padding-top: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+
+    a {
+      color: white;
+    }
+  }
+
+  .right-link {
+    padding-right: 300%;
+  }
+
+  .logo h1 {
+    color: white;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+  }
 }
 
-li {
-  display: inline;
+.logo {
+  float: left;
+}
+
+.links {
+  float: right;
 }
