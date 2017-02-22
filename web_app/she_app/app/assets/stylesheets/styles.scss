@@ -88,13 +88,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: rgb(255,192,203);
   padding: 20px;
   background-color: black;
   border: 3px solid black;
 
   &:hover {
-    animation: invert .5s ease-in-out forwards;
+    animation: invert .3s ease-in-out forwards;
   }
 }
 
@@ -102,10 +102,12 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     background-color: black;
     color: white;
+    border: 3px solid black;
   }
   100% {
-    background-color: white;
-    color: black;
+    background-color: rgb(255,192,203);
+    color: white;
+    border: 2px solid white;
   }
 }
 
