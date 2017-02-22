@@ -1,64 +1,119 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700');
+
+html {
+
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Droid Serif', serif;
+  background: url(shake-weight.png);
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
-.row {
-  padding-top: 40px;
+// Background Opaque Layer
+.layer {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+// The Navbar Styles
 .navbar {
-  background-color: black;
-  height: 40px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  .logo {
+    float: left;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline;
-    padding-top: 5px;
-    padding-left: 7%;
-    padding-right: 7%;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-
-    a {
-      color: white;
+    h1 {
+      color: rgb(255,192,203);
+      display: block;
+      border-bottom: 2px solid rgb(255,192,203);;
+      text-transform: capitalize;
+      font-size: 2.5em;
+      margin-top: 10px;
+      vertical-align: middle;
     }
   }
+  .links {
+    float: right;
 
-  .right-link {
-    padding-right: 300%;
+    li {
+      font-family: 'Open Sans', sans-serif;
+      margin-left: 2em;
+      font-size: 2em;
+      list-style-type: none;
+      display: inline-block;
+
+      a {
+        color: white;
+      }
+
+
+      &:hover {
+        animation: under .2s ease-in-out forwards;
+      }
+    }
+  }
+}
+
+// Home Page Styles
+.center-lg {
+  text-align: center;
+
+  h1 {
+    color: rgb(255,192,203);
+    font-size: 6em;
+    margin-top: 3em;
+    margin-bottom: 10px;
   }
 
-  .logo h1 {
+  h2 {
+    margin: .2em 0;
+    margin-bottom: 1em;
+    font-size: 4em;
+  }
+}
+
+.btn-lg {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px;
+  background-color: black;
+  border: 3px solid black;
+
+  &:hover {
+    animation: invert .5s ease-in-out forwards;
+  }
+}
+
+@keyframes invert {
+  0% {
+    background-color: black;
     color: white;
-    padding: 0;
-    padding-left: 10px;
-    margin: 0;
+  }
+  100% {
+    background-color: white;
+    color: black;
   }
 }
 
-.logo {
-  float: left;
-}
-
-.links {
-  float: right;
+@keyframes under {
+  0% {
+    border-bottom: none;
+  }
+  100% {
+    border-bottom: 2px solid white;
+  }
 }
