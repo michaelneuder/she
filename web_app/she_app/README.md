@@ -8,7 +8,12 @@
 $bundle install
 ```
 #### this installs all of the dependencies for the web app
-#### 4) In the terminal, in the she_app directory, run
+#### 4) In the terminal is she_app directory run
+````
+$bin/rails db:migrate
+````
+#### this will migrate the database locally so that the dynamic pages will work
+#### 5) In the terminal, in the she_app directory, run
 ```
 $bin/rails server
 ```
@@ -16,4 +21,4 @@ $bin/rails server
 
 ## Also Hosted on Heroku
 [Hosted web app](https://agile-basin-87130.herokuapp.com/)
-#### It's just a Kanye quote for inspiration for now
+#### It is about halfway to where I want it to be 
