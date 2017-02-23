@@ -1,10 +1,29 @@
 <% provide(:title, "Home") %>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 center-lg">
+<div class="container-fluid block-1">
+  <div class="layer">
+    <div class="row">
+      <div class="col-md-12 center-lg">
+        <h1>SHE | The Web App</h1>
+        <h2>Relationship Simplified</h2>
+        <%= link_to 'Sign Up', signup_path, class: 'btn-lg' %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid block-2">
+  <div class="row row-block-2">
+    <div class="col-md-4 col-md-offset-2">
       <h1>SHE | The Web App</h1>
-      <h2>Relationship Simplified</h2>
-      <%= link_to 'Sign Up', signup_path, class: 'btn-lg' %>
+    </div>
+    <div class="col-md-4">
+      <h1>What is SHE?</h1>
+      <p>
+        She is a cross platform fake girlfriend web application. She was
+        created so that you can convinve your friends and family that you have
+        a girlfriend. Need to impress your family? We got you covered. Need to
+        impress your friends? We can do that. Need to impress your coworkers?
+        We have the answer.
+      </p>
     </div>
   </div>
 </div>

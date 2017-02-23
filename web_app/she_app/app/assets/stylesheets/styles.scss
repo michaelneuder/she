@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700');
 
+$pink: rgb(255,192,203);
+
 html {
 
 }
@@ -10,8 +12,6 @@ a:hover {
 
 body{
   font-family: 'Droid Serif', serif;
-  background: url(shake-weight.png);
-  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,9 +19,40 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.block-1 {
+  background: url(shake-weight.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.row-block-2 {
+  margin-top: 7em;
+}
+
+.block-2 {
+  height: 80%;
+  width: 100%;
+
+  h1 {
+    color: $pink;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 3em;
+  }
+
+  p {
+    border-top: 4px solid rgb(255,192,203);
+    padding-top: 5px;
+    margin: 0;
+    font-size: 2em;
+  }
+}
+
 // Background Opaque Layer
-.layer {
-    background-color: rgba(0, 0, 0, .7);
+.full-page {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,8 +60,20 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
+.layer {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 // The Navbar Styles
 .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
   .logo {
     float: left;
 
@@ -92,10 +135,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  color: rgb(255,192,203);
+  color: white;
   padding: 20px;
-  background-color: black;
-  border: 3px solid black;
+  background-color: rgb(255,192,203);
+  border: 3px solid rgb(255,192,203);
 
   &:hover {
     animation: invert .3s ease-in-out forwards;
@@ -104,13 +147,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes invert {
   0% {
-    background-color: black;
-    color: white;
-    border: 3px solid black;
-  }
-  100% {
     background-color: rgb(255,192,203);
     color: white;
+    border: 3px solid rgb(255,192,203);
+  }
+  100% {
+    background-color: white;
+    color: rgb(255,192,203);
     border: 2px solid white;
   }
 }

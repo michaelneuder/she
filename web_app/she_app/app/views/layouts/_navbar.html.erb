@@ -1,0 +1,22 @@
+<div class="navbar container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="logo">
+        <h1><%=link_to "SHE", root_path, class: 'nav-button' %></h1>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <%= link_to "Home", root_path, class: 'nav-button' %>
+          </li>
+          <li class="right-link">
+            <%= link_to "About", about_path, class: 'nav-button' %>
+          </li>
+          <li class="right-link">
+            <%= link_to "Login", login_path , class: 'nav-button' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
