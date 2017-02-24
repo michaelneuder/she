@@ -1,7 +1,7 @@
 # she
 ## Relationship simplified.
 
-## Team: 
+## Team:
 Nischay Murthy, Executive Program Analyst (github: nmurthy9)  
 Nick Zimmerer, Public Relations Representative (github: nzimm)  
 Bum Kim, Quality Assurance Manager (github: bumshakabum)  
@@ -23,20 +23,20 @@ she is real. Take it one step farther and become a premium member to request in
 person appearances at family events or parties, where other users will pretend
 to be your significant other. Who knows, maybe you will find a connection!
 
-## Vision statement: 
+## Vision statement:
 1) The freedom of being single, with the social status of being taken.  
 2) To give users the appearance of having a significant other, and provide
 companionship to them.  
-	
+
 ## Motivation: for working on this particular project (Why would you develop this?)
 Provide the illusion of a girlfriend without requiring any real-life interaction
-	
-## Risks: to project completion 
+
+## Risks: to project completion
 * Most of the team is new to app and web development
 * A scope of a mobile app and a web app could be too broad
-* With 5 collaboraters, communication may prove to be difficult 
+* With 5 collaboraters, communication may prove to be difficult
 * Syncronization of multiple design vectors will be crutial to success
-	
+
 ## Mitigation strategy for dealing with the risk
 * Sharing knowledge as we learn will accelerate the learning curve
 * Frequent communication will assist in project synchronization
@@ -54,7 +54,7 @@ behavior to fool parents)
 
 Story #4: "As a 20-something, I want to impress my friends with the fact that I
 have a girlfriend." (10 pts - belivable history on social media)
-    
+
 Story #5: "As I prankster, I want to make my friends think that someone is
 interested in them online." (20 pts - automated, lifelike contact)
 
@@ -80,3 +80,26 @@ plan (or screenshot of) from your project tracking software into the repository
 
 ![plan pic](/images/plan.png)
 Format: ![Alt Text](url)
+
+## To Run
+#### 1) Pull from github, just to make sure everything is up to date
+#### 2) Go into she_app directory. This is the directory for the app
+#### 3) Run this in the terminal in the she_app directory
+```
+$bundle install
+```
+#### this installs all of the dependencies for the web app
+#### 4) In the terminal is she_app directory run
+````
+$bin/rails db:migrate
+````
+#### this will migrate the database locally so that the dynamic pages will work
+#### 5) In the terminal, in the she_app directory, run
+```
+$bin/rails server
+```
+#### this will serve the page to localhost:3000
+
+## Also Hosted on Heroku
+[Hosted web app](https://agile-basin-87130.herokuapp.com/)
+#### It is about halfway to where I want it to be
