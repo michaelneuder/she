@@ -1,22 +1,32 @@
 <% provide(:title, "Signup") %>
-<h1>Signup</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages' %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+<div class="container-fluid block-new-user-1">
+  <div class="layer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Signup</h1>
+        <%= form_for(@user) do |f| %>
+          <%= render 'shared/error_messages' %>
+          <br />
+          <%= f.label :name %>
+          <%= f.text_field :name %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email %>
+          <br />
+          <%= f.label :email %>
+          <%= f.email_field :email %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+          <br />
+          <%= f.label :password %>
+          <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+          <br />
+          <%= f.label :password_confirmation, "Confirmation" %>
+          <%= f.password_field :password_confirmation %>
+          <br />
 
-      <%= f.submit "Create my account", class: "btn-lg" %>
-    <% end %>
+          <%= f.submit "Create my account", class: "btn-lg" %>
+          <br />
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

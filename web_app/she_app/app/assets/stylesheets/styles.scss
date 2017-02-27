@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700');
 
 $pink: rgb(255,192,203);
+$dark-gray: #3D3C3A;
 
 html {
 
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-1 {
-  background: url(shake-weight.png);
+  background: image-url("red-love-romantic-flowers.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
 }
 
-.row-block-2 {
+.row-block-2, .row-block-3, .row-block-4 {
   margin-top: 7em;
 }
 
@@ -45,6 +46,55 @@ h1, h2, h3, h4, h5, h6 {
 
   p {
     border-top: 4px solid rgb(255,192,203);
+    padding-top: 5px;
+    margin: 0;
+    font-size: 2em;
+  }
+}
+
+.block-3 {
+  height: 100%;
+  width: 100%;
+  background-color: $dark-gray;
+
+  h1 {
+    padding-top: 15%;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 3em;
+  }
+
+  p {
+    color: white;
+    border-top: 4px solid white;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 2em;
+  }
+
+  img {
+    padding-top: 15%;
+    padding-left: 15%;
+  }
+}
+
+.block-4 {
+  height: 80%;
+  width: 100%;
+
+  background-color: $pink;
+
+  h1 {
+    color: black;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 3em;
+  }
+
+  p {
+    color: black;
+    border-top: 4px solid black;
     padding-top: 5px;
     margin: 0;
     font-size: 2em;
@@ -155,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     background-color: white;
     color: rgb(255,192,203);
-    border: 2px solid white;
+    border: 3px solid white;
   }
 }
 
@@ -165,5 +215,67 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     border-bottom: 2px solid white;
+  }
+}
+
+// SIGN UP STYLES
+.block-new-user-1 {
+  background: image-url("nature-flowers-vintage-plant.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+
+  h1{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  form {
+    border: 3px solid $pink;
+    background-color: white;
+
+    label {
+      color: black;
+      text-transform: uppercase;
+      padding-left: 10%;
+      margin-top: 15%;
+      font-size: 2em;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    input {
+      margin-left: 10%;
+      display: block;
+      width: 80%;
+      height: 20%;
+
+      &:focus {
+        box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
+      }
+    }
+
+    #user_name, #user_email, #user_password, #user_password_confirmation{
+      height: 40px;
+      border: 3px solid black;
+    }
+  }
+}
+
+// ABOUT
+.block-about-1 {
+  background: image-url("pexels-photo-27714.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+
+  h1{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 3em;
   }
 }
