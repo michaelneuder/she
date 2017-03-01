@@ -12,9 +12,18 @@
           <li class="right-link">
             <%= link_to "About", about_path, class: 'nav-button' %>
           </li>
+          <% if !logged_in? %>
+            <li class="right-link">
+              <%= link_to "Login", login_path , class: 'nav-button' %>
+            </li>
+          <% else %>
           <li class="right-link">
-            <%= link_to "Login", login_path , class: 'nav-button' %>
+            <%= link_to "Profile", current_user, class: 'nav-button' %>
           </li>
+          <li class="right-link">
+            <%= link_to "Logout", logout_path, method: "delete" %>
+          </li>
+          <% end %>
         </ul>
       </div>
     </div>
