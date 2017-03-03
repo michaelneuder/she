@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700');
 
+// ==============================
+//        DECLARE COLORS
+// ==============================
 $pink: rgb(255,192,203);
 $dark-gray: #3D3C3A;
 
-html {
-
-}
-
+// Just taking away the default anchor styles
 a:hover {
   text-decoration: none;
 }
 
+// ==============================
+//         DEFAULT STYLES
+// ==============================
 body{
   font-family: 'Droid Serif', serif;
 }
@@ -20,89 +23,219 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.block-1 {
-  background: image-url("red-love-romantic-flowers.png");
-  background-size: cover;
+// ==============================
+//       STYLES FOR BLOCKS
+// ==============================
+
+.block {
   height: 100%;
   width: 100%;
-  padding: 0;
-  overflow-x: hidden;
+
+  // ======================================================
+  //                    HOMEPAGE BLOCKS
+  // ======================================================
+  &.block-1 {
+    background: image-url("red-love-romantic-flowers.png");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  &.block-2 {
+    h1 {
+      color: $pink;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+      font-size: 3em;
+    }
+
+    p {
+      border-top: 4px solid rgb(255,192,203);
+      padding-top: 5px;
+      margin: 0;
+      font-size: 2em;
+    }
+  }
+
+  &.block-3 {
+    background-color: $dark-gray;
+
+    h1 {
+      padding-top: 15%;
+      color: white;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+      font-size: 3em;
+    }
+
+    p {
+      color: white;
+      border-top: 4px solid white;
+      padding-top: 5px;
+      margin: 0;
+      font-size: 2em;
+    }
+
+    img {
+      padding-top: 15%;
+      padding-left: 15%;
+      height: 70%;
+      width: auto;
+    }
+  }
+
+  &.block-4 {
+    background-color: $pink;
+
+    h1 {
+      color: black;
+      margin-top: 25%;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+      font-size: 3em;
+    }
+
+    p {
+      color: black;
+      border-top: 4px solid black;
+      padding-top: 5px;
+      margin: 0;
+      font-size: 2em;
+    }
+  }
+
+  // ======================================================
+  //                     ABOUT BLOCKS
+  // ======================================================
+
+  &.block-about-1 {
+    background: image-url("pexels-photo-27714.png");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+
+    h1{
+      padding-top: 10%;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+
+  // ======================================================
+  //                   NEW USER BLOCKS
+  // ======================================================
+
+  &.block-new-user-1 {
+    background: image-url("nature-flowers-vintage-plant.png");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+
+    h1{
+      padding-top: 10%;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    form {
+
+      label {
+        color: white;
+        text-transform: uppercase;
+        padding-left: 10%;
+        margin-top: 15%;
+        font-size: 2em;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      input {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+        height: 20%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
+        }
+      }
+
+      .btn-lg{
+        margin-top: 2%;
+      }
+
+      #user_name, #user_email, #user_password, #user_password_confirmation{
+        height: 40px;
+        border: 3px solid white;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  // ======================================================
+  //                     LOGIN BLOCKS
+  // ======================================================
+
+  &.block-login-1{
+    background: image-url("flowers1.jpg");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+
+    h1{
+      padding-top: 10%;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    p {
+      padding-left: 10%;
+      a {
+        color: white;
+        font-size: 1.5em;
+      }
+    }
+
+    form {
+
+      label {
+        color: white;
+        text-transform: uppercase;
+        padding-left: 10%;
+        margin-top: 15%;
+        font-size: 2em;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      input {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+        height: 20%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
+        }
+      }
+
+      .btn-lg{
+        margin-top: 2%;
+      }
+
+      #sessions_email, #sessions_password {
+        height: 40px;
+        border: 3px solid white;
+        margin-bottom: 2%;
+      }
+    }
+  }
 }
 
-.row-block-2, .row-block-3, .row-block-4 {
+.row-block {
   margin-top: 7em;
 }
 
-.block-2 {
-  height: 80%;
-  width: 100%;
-
-  h1 {
-    color: $pink;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    font-size: 3em;
-  }
-
-  p {
-    border-top: 4px solid rgb(255,192,203);
-    padding-top: 5px;
-    margin: 0;
-    font-size: 2em;
-  }
-}
-
-.block-3 {
-  height: 100%;
-  width: 100%;
-  background-color: $dark-gray;
-
-  h1 {
-    padding-top: 15%;
-    color: white;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    font-size: 3em;
-  }
-
-  p {
-    color: white;
-    border-top: 4px solid white;
-    padding-top: 5px;
-    margin: 0;
-    font-size: 2em;
-  }
-
-  img {
-    padding-top: 15%;
-    padding-left: 15%;
-  }
-}
-
-.block-4 {
-  height: 110%;
-  width: 100%;
-
-  background-color: $pink;
-
-  h1 {
-    color: black;
-    margin-top: 25%;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    font-size: 3em;
-  }
-
-  p {
-    color: black;
-    border-top: 4px solid black;
-    padding-top: 5px;
-    margin: 0;
-    font-size: 2em;
-  }
-}
-
-// Background Opaque Layer
+// Don't remember what it does but keep it. It's applied to the highest
+// parent div in application.html.erb
 .full-page {
     position: absolute;
     top: 0;
@@ -111,6 +244,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
+// Puts the opaque layer over the background
 .layer {
   background-color: rgba(0, 0, 0, .7);
   height: 100%;
@@ -119,7 +253,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-// The Navbar Styles
+// ==============================
+//         NAVBAR STYLES
+// ==============================
 .navbar {
   z-index: 5;
   position: absolute;
@@ -165,7 +301,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Home Page Styles
+// ==============================
+//        HOMEPAGE STYLES
+// ==============================
 .center-lg {
   text-align: center;
 
@@ -183,6 +321,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// ==============================
+//         BUTTON STYLES
+// ==============================
 .btn-lg {
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
@@ -219,80 +360,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// SIGN UP STYLES
-.block-new-user-1 {
-  background: image-url("nature-flowers-vintage-plant.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  overflow-x: hidden;
-
-  h1{
-    padding-top: 10%;
-    text-align: center;
-    font-size: 3em;
-  }
-
-  form {
-    border: 3px solid $pink;
-    background-color: white;
-
-    label {
-      color: black;
-      text-transform: uppercase;
-      padding-left: 10%;
-      margin-top: 15%;
-      font-size: 2em;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    input {
-      margin-left: 10%;
-      display: block;
-      width: 80%;
-      height: 20%;
-
-      &:focus {
-        box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
-      }
-    }
-
-    #user_name, #user_email, #user_password, #user_password_confirmation{
-      height: 40px;
-      border: 3px solid black;
-    }
-  }
-}
-
-// ABOUT
-.block-about-1 {
-  background: image-url("pexels-photo-27714.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  overflow-x: hidden;
-
-  h1{
-    padding-top: 10%;
-    text-align: center;
-    font-size: 3em;
-  }
-}
-
+// ==============================
+//       ABOUT PAGE STYLES
+// ==============================
 .about-text{
   color: white;
   font-size: 2em;
-}
-
-
-//LOG IN
-.block-login-1{
-  background: image-url("flowers1.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  overflow-x: hidden;
 }
