@@ -1,0 +1,20 @@
+<% provide(:title, "talk to her") %>
+<div class="container-fluid block block-about-1">
+  <div class="layer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>this is where you can talk to your virtual girlfriend</h1>
+        <p class="about-text">
+          <form>
+            say hello:
+            <input type="text" name="first_chat"><br>
+            <% require 'cleverbot'
+                bot = Cleverbot.new('N0Iu1Wj2Jeh7zhIm', 'Swh2ziz8Gl2ICgudNh0VgFbPDXUI3kS7', 'chatting with gf')
+                bot.say('testing stuff')
+            %>
+          </form>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
