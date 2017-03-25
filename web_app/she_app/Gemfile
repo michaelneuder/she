@@ -12,6 +12,9 @@ gem 'jbuilder',     '2.4.1'
 gem 'twilio-ruby'
 gem 'twitter'
 gem 'figaro'
+# gem 'rubygems'
+gem 'oauth'
+gem 'cleverbot'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
