@@ -1,7 +1,7 @@
 require 'twitter'
 require 'rubygems'
 require 'oauth'
-require 'cleverbot'
+#require 'cleverbot'
 
 namespace :dm do
   desc "Get DM's"
@@ -27,8 +27,9 @@ namespace :dm do
       messages = JSON.parse(response.body)
     end
 
-    messages.each do |message|
-      puts message['sender']['screen_name']
-    end
+    puts messages
+    # messages.each do |message|
+    #   puts message['sender']['screen_name']
+    # end
   end
 end

@@ -1,9 +1,9 @@
 require 'twitter'
 require 'rubygems'
 require 'oauth'
-require 'cleverbot'
+#require 'cleverbot'
 
-$bot = Cleverbot.new('RtW9RmyVVExzC3xi','jpaekuzPDA5HRUNuAqtkOztlErHgsWSN')
+#$bot = Cleverbot.new('RtW9RmyVVExzC3xi','jpaekuzPDA5HRUNuAqtkOztlErHgsWSN')
 
 $client = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV['consumer_key']
