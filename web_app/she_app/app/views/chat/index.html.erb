@@ -1,7 +1,22 @@
-<h1>chat with her</h1>
 <p>say hello!</p>
-<form action="/messageSubmitted.rb">
+<p>need space </p>
+<!-- <form action="chat/get_message">
  chat:<br>
  <input type="text" name="message" value="type here"><br>
  <input type="submit" value="send">
-</form>
+</form> -->
+<!--
+<h1>chat with her</h1>
+<% form_tag :action => 'get_message' do %>
+    <%= text_area :message,  :cols => '40', :rows => '5' %>
+    <%= submit_tag "Submit" %>
+<% end %> -->
+<!-- <% form_tag(:action => 'get_message') do %>
+  <%= text_field_tag "message" %>
+  <%= submit_tag %>
+<% end %> -->
+<%= form_tag :action => 'get_message' do %>
+  <%= label_tag(:q, "chat with her:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("send") %>
+<% end %>
