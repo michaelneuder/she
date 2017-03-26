@@ -15,23 +15,43 @@ namespace :dm do
     address = URI("#{baseurl}#{path}")
     request = Net::HTTP::Get.new address.request_uri
 
+    path2 = '/1.1/direct_messages/sent.json'
+    address2 = URI("#{baseurl}#{path2}")
+    request2 = Net::HTTP::Get.new address2.request_uri
+
     http = Net::HTTP.new address.host, address.port
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
+    http2 = Net::HTTP.new address2.host, address2.port
+    http2.use_ssl = true
+    http2.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
     request.oauth! http, $consumer_key, $access_token
     http.start
     response = http.request request
+
+    request2.oauth! http2, $consumer_key, $access_token
+    http2.start
+    response2 = http2.request request2
 
     messages = nil
     if response.code == '200'
       messages = JSON.parse(response.body)
     end
 
-    puts messages
-    # messages.each do |message|
-    #   puts message['sender']['screen_name']
-    # end
+    if response2.code == '200'
+      messages2 = JSON.parse(response2.body)
+    end
+
+    #puts messages
+    messages.each do |message|
+      puts message['text'] + ' ' + message['created_at'] + ' ' + message['sender']['screen_name']
+    end
+
+    messages2.each do |message|
+      puts message['created_at'] + ' ' + message['recipient']['screen_name']
+    end
 
     #bot = Cleverbot.new('RtW9RmyVVExzC3xi','jpaekuzPDA5HRUNuAqtkOztlErHgsWSN')
 
