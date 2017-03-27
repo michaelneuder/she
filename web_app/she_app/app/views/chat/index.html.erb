@@ -1,5 +1,5 @@
-<p>say hello!</p>
-<p>need space </p>
+<p class="hello">say hello!</p>
+<p class="chat">chat with her! </p>
 <!-- <form action="chat/get_message">
  chat:<br>
  <input type="text" name="message" value="type here"><br>
@@ -15,8 +15,13 @@
   <%= text_field_tag "message" %>
   <%= submit_tag %>
 <% end %> -->
-<%= form_tag :action => 'get_message' do %>
-  <%= label_tag(:q, "chat with her:") %>
-  <%= text_field_tag(:q) %>
+<!-- <%= form_tag :action => 'get_message' do %>
+ <%= label_tag(:q, "chat with her:") %>
+ <%= text_field_tag(:q) %>
   <%= submit_tag("send") %>
-<% end %>
+<% end %> -->
+
+<form action="/chat/get_message">
+ <input type="text" name="message" value="" id="input"><br>
+ <input type="submit" value="send" id="submit">
+</form>
