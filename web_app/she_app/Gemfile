@@ -14,7 +14,7 @@ gem 'twitter'
 gem 'figaro'
 # gem 'rubygems'
 gem 'oauth'
-gem 'cleverbot'
+gem 'cleverbot_io'
 gem 'json'
 
 group :development, :test do
