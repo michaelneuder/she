@@ -6,10 +6,10 @@ require 'oauth'
 #$bot = Cleverbot.new('RtW9RmyVVExzC3xi','jpaekuzPDA5HRUNuAqtkOztlErHgsWSN')
 
 $client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = ENV['consumer_key']
-  config.consumer_secret     = ENV['consumer_secret']
-  config.access_token        = ENV['access_token']
-  config.access_token_secret = ENV['access_secret']
+  config.consumer_key        = "#{ENV['consumer_key']}"
+  config.consumer_secret     = "#{ENV['consumer_secret']}"
+  config.access_token        = "#{ENV['access_token']}"
+  config.access_token_secret = "#{ENV['consumer_secret']}"
 end
 
 #Cant get this to work
