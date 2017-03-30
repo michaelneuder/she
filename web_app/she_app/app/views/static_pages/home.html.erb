@@ -6,8 +6,12 @@
         <h1>SHE | The Web App</h1>
         <h2>Relationship Simplified</h2>
         <%= link_to 'Sign Up', signup_path, class: 'btn-lg' %>
-        <%= link_to 'What is SHE?', "#", id: 'what' %>
       </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+             <%= link_to 'What is SHE?', "#", id: 'what', class: 'down-by-page' %>
+        </div>
     </div>
   </div>
 </div>
@@ -25,9 +29,13 @@
         impress your friends? SHE can do that. Need to impress your coworkers?
         SHE is the answer.
       </p>
-      <%= link_to 'How does SHE work?', "#", id: 'how' %>
     </div>
   </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <%= link_to 'How does SHE work?', "#", id: 'how', class: 'down-by-page' %>
+        </div>
+    </div>
 </div>
 <div class="container-fluid block block-3">
   <div class="row row-block">
@@ -40,11 +48,15 @@
         can send you text messages. All of these features can be used to prove
         to others that you have a girlfriend.
       </p>
-      <%= link_to 'How to sign up?', "#", id: 'signup' %>
     </div>
     <div class="col-md-4">
       <%= image_tag("Apps.png") %>
     </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+          <%= link_to 'How to sign up?', "#", id: 'signup', class: 'down-by-page' %>
+      </div>
   </div>
 </div>
 <div class="container-fluid block block-4">

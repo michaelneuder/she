@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     img {
-      padding-top: 15%;
+      padding-top: 5%;
       padding-left: 15%;
       height: 70%;
       width: auto;
@@ -246,17 +246,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-// Scroll button
-.back-to-top {
-    background-color: rgba(255, 255, 255, .3);
-    padding: 1vh;
-    position: fixed;
-    display: block;
-    bottom: 1vh;
-    right: 1vh;
-    height: 5vh;
-    width: 5vh;
-}
 
 // Puts the opaque layer over the background
 .layer {
@@ -380,6 +369,52 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     border-bottom: 2px solid white;
   }
+}
+
+// SCROLL BUTTONS
+.back-to-top {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 1vh;
+    position: fixed;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 1vh;
+    //right: 1vh;
+    height: 5vh;
+    width: 5vh;
+    &:hover {
+        background-color: rgba(255, 255, 255, .5);
+    }
+}
+
+.down-by-page {
+    color: $pink;
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    margin-top: 7em;
+    text-align: center;
+    outline-style: none;
+    &:link, &:hover, &:visited, &:active {
+        text-decoration: none;
+    }
+    &:link {
+        color: $pink
+    }
+    &:hover {
+        color: white;
+    }
+    &#how {
+        margin-top: 8em;
+    }
+    &#signup {
+        margin-top: 1em;
+        color: white;
+        &:hover {
+            color: $pink;
+        }
+    }
 }
 
 // ==============================
