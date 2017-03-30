@@ -1,16 +1,17 @@
 <% provide(:title, "Home") %>
-<div class="container-fluid block block-1" id="block-1">
+<div class="container-fluid block block-1">
   <div class="layer">
     <div class="row">
       <div class="col-md-12 center-lg">
         <h1>SHE | The Web App</h1>
         <h2>Relationship Simplified</h2>
         <%= link_to 'Sign Up', signup_path, class: 'btn-lg' %>
+        <%= link_to 'What is SHE?', "#", id: 'what' %>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid block block-2" id="block-2">
+<div class="container-fluid block block-2">
   <div class="row row-block">
     <div class="col-md-4 col-md-offset-2">
       <%= image_tag("SheLogo1.png") %>
@@ -24,6 +25,7 @@
         impress your friends? SHE can do that. Need to impress your coworkers?
         SHE is the answer.
       </p>
+      <%= link_to 'How does SHE work?', "#", id: 'how' %>
     </div>
   </div>
 </div>
@@ -38,6 +40,7 @@
         can send you text messages. All of these features can be used to prove
         to others that you have a girlfriend.
       </p>
+      <%= link_to 'How to sign up?', "#", id: 'signup' %>
     </div>
     <div class="col-md-4">
       <%= image_tag("Apps.png") %>
@@ -58,6 +61,7 @@
         female interaction. Before long, everyone will be totally stoked about you
         and your totally fake girlfriend.
       </p>
+      <%= image_tag("uparrow.png", size: "50x50", class: 'back-to-top') %>
     </div>
   </div>
 </div>
