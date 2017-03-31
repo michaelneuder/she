@@ -21,7 +21,20 @@
   <%= submit_tag("send") %>
 <% end %> -->
 
-<form action="/chat/get_message">
+<!-- <form action="/chat/get_message">
  <input type="text" name="message" value="" id="input"><br>
  <input type="submit" value="send" id="submit">
-</form>
+</form> -->
+
+
+<div id="chat">
+<%= form_for :users, class: "chat" do |f| %>
+
+  <%= f.label :message %>
+  <%= f.text_field :message, class: "shortInput" %> <br />
+
+
+  <%= f.submit "send", class: "button sendMessage" %>
+
+<% end %>
+</div>

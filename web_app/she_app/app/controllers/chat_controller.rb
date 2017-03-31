@@ -5,7 +5,7 @@ class ChatController < ApplicationController
   end
 
   def get_message
-    puts 'hello';
+
   end
 
   def print_response
