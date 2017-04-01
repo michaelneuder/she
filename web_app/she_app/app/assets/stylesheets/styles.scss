@@ -372,11 +372,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // SCROLL BUTTONS
+// button to scroll to top of page
 .back-to-top {
     background-color: rgba(255, 255, 255, .3);
     padding: 1vh;
     position: fixed;
-    display: block;
+    display: none;
     margin-right: auto;
     margin-left: auto;
     bottom: 1vh;
@@ -388,6 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+// links to scroll down by a page
 .down-by-page {
     color: $pink;
     display: block;

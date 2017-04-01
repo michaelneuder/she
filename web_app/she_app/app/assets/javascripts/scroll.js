@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $(".back-to-top").hide();
+//$(document).ready(function(){
+var ready = function(){
     $("#what").on('click', function(e){
         e.preventDefault();
         $('html, body').stop().animate({
@@ -18,8 +18,8 @@ $(document).ready(function(){
             scrollTop: $(".block-4").offset().top
         }, 1000);
     });
-    $(document).scroll(function(){
-        var docScroll = $(document).scrollTop(),
+    $(window).scroll(function(){
+        var docScroll = $(window).scrollTop(),
             almostBottom = $(".block-4").offset().top - 100;
 
         if(docScroll >= almostBottom) {
@@ -34,4 +34,7 @@ $(document).ready(function(){
             scrollTop: 0
         }, 1000);
     });
-});
+};
+
+$(document).ready(ready);
+$(document).on('turbolinks:load', ready);
