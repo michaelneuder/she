@@ -1,32 +1,5 @@
 <p class="hello">say hello!</p>
 <p class="chat">chat with her! </p>
-<!-- <form action="chat/get_message">
- chat:<br>
- <input type="text" name="message" value="type here"><br>
- <input type="submit" value="send">
-</form> -->
-<!--
-<h1>chat with her</h1>
-<% form_tag :action => 'get_message' do %>
-    <%= text_area :message,  :cols => '40', :rows => '5' %>
-    <%= submit_tag "Submit" %>
-<% end %> -->
-<!-- <% form_tag(:action => 'get_message') do %>
-  <%= text_field_tag "message" %>
-  <%= submit_tag %>
-<% end %> -->
-<!-- <%= form_tag :action => 'get_message' do %>
- <%= label_tag(:q, "chat with her:") %>
- <%= text_field_tag(:q) %>
-  <%= submit_tag("send") %>
-<% end %> -->
-
-<!-- <form action="/chat/get_message">
- <input type="text" name="message" value="" id="input"><br>
- <input type="submit" value="send" id="submit">
-</form> -->
-
-
 <div id="chat">
 <%= form_for :users, class: "chat" do |f| %>
 

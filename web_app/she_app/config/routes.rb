@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   get 'chat/get_message', to: 'chat#get_message'
-  post 'chat/get_message', to: 'chat#get_message'
+  # post 'chat/get_message', to: 'chat#get_message'
 
   root 'static_pages#home'
   get '/login', to: 'sessions#new'
@@ -13,5 +13,4 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   get "/about", to: 'static_pages#about'
   resources :users
-  get 'chat' => 'chat#get_message'
 end
