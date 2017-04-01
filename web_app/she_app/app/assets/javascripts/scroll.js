@@ -36,6 +36,5 @@ var ready = function(){
     });
 };
 
-// http://stackoverflow.com/questions/17600093/rails-javascript-not-loading-after-clicking-through-link-to-helper#17600195
 $(document).ready(ready);
 $(document).on('turbolinks:load', ready);
