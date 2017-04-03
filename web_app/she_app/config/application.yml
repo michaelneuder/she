@@ -11,6 +11,6 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 # Twilio SMS secrets
 
-twilioAccountSDI: AC3b315130218e5fdff732988977a04c9a
-twilioAuthToken: d80c6efebb2f5ca889f6d694aed85972
-
+twilioAccountSID: AC8f230f64baecd2bb60e02625b79142b4
+twilioAuthToken: 78bf2a081f6705d13ff800876a935946
+twilioNumber: "+17207091596"

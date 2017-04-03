@@ -103,3 +103,6 @@ $bin/rails server
 ## Also Hosted on Heroku
 [Hosted web app](https://agile-basin-87130.herokuapp.com/)
 #### It is about halfway to where I want it to be
+
+## Twilio setup/info
+* config/contacts has usernames and numbers
