@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'chat/get_message', to: 'chat#get_message'
   get 'chat/index'
   post 'chat/index', to: 'chat#get_message'
+  post 'chat/get_message', to: 'chat#print_response'
 
   root 'static_pages#home'
   get '/login', to: 'sessions#new'

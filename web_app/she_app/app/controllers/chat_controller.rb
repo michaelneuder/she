@@ -11,10 +11,12 @@ class ChatController < ApplicationController
   def get_message
     params[:message]
     puts 'message recieved';
+    render 'chat/index'
   end
 
   def print_response
     puts 'response';
+    render 'chat/response'
   end
 
 end
