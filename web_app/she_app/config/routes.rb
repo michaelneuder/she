@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'chat/index'
-  # get '/messageSubmitted.rb'
-
   get 'welcome/index'
+
   get 'chat/get_message', to: 'chat#get_message'
-  # post 'chat/get_message', to: 'chat#get_message'
+  get 'chat/index'
+  post 'chat/index', to: 'chat#get_message'
 
   root 'static_pages#home'
   get '/login', to: 'sessions#new'
