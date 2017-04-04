@@ -83,5 +83,15 @@ function myFacebookLogin() {
   <button onclick="postTimeline()"> post to your timeline </button>
 </div>
 </div>
+
+<input type="text" name="txt" id="txt"/>
+<button onclick="retrieve('txt');"/>post specific message</button>
+
+<script>
+function retrieve(id) {
+    var txtbox = document.getElementById(txt);
+    var value = txtbox.value;
+}
+</script>
 </body>
 </html>
