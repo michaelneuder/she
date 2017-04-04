@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post 'chat/index', to: 'chat#get_message'
   post 'chat/get_message', to: 'chat#print_response'
 
+  get 'facebook/index'
+
   root 'static_pages#home'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
