@@ -60,6 +60,10 @@
      ref.parentNode.insertBefore(js, ref);
    }(document));
 
+   function postTimeline(){
+     FB.api('/me/feed', 'post', {message: 'test post'});
+   }
+
 </script>
 <div align="center">
 <h2>facebook demo</h2>
@@ -68,6 +72,16 @@
   <button onclick="Login()">log in to your facebook</button>
 </div>
 
+<script>
+function myFacebookLogin() {
+  FB.login(function(){}, {scope: 'publish_actions'});
+}
+</script>
+<button onclick="myFacebookLogin()">allow permissions</button>
+
+<div id='postTimeline'>
+  <button onclick="postTimeline()"> post to your timeline </button>
+</div>
 </div>
 </body>
 </html>
