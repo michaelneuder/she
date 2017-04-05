@@ -1,0 +1,25 @@
+Facebook test
+    Carry out facebook functionalities with girlfriend
+Description
+    Test the facebook API
+Pre-conditions
+    User has valid user name and password for She
+    User is logged into She app
+Test steps
+    1. Navigate to Facebook tab
+    2. Provide valid user name and password for Facebook
+    3. Post an update on Facebook
+    4. Log out of Facebook
+Expected result
+    Girlfriend should like the post
+    Should exit to the She home screen
+Actual result
+    Girlfriend account likes the user's post on Facebook
+    Application exits to home screen
+Status (Pass/Fail)
+    Pass
+Notes
+    N/A
+Post-conditions
+    Facebook post has girlfriend's like on it
+    User is on the She home screen
