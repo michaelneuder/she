@@ -1,17 +1,18 @@
-#require 'twilio-ruby'
-
 class TwilioController < ApplicationController
-    #rescue_from Standard Error do |exception|
-    #    trigger_sms_alerts(exception)
-    #end
+    def index
+    end
 
-    def send_message(phone_number, message)
+    #def send_message(phone_number, message)
+    def send_message
+        twilioSID = ENV['twilioAccountSID']
+        twilioAuthToken = ENV['twilioAuthToken']
         twilio_number = ENV['twilioNumber']
-        client = Twilio::Rest::Client.new ENV['twilioAccountSID'], ENV['twilioAuthToken']
+        @client = Twilio::Rest::Client.new twilioSID, twilioAuthToken
     
-    client.messages.create(
-        from:   twilio_number,
-        to:     phone_number,
-        body:   message,
-    )
+        client.messages.create(
+            from:   twilio_number,
+            to:     phone_number,
+            body:   message,
+        )
+    end
 end
