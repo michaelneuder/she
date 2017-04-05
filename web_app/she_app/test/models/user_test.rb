@@ -10,6 +10,10 @@ class UserTest < ActiveSupport::TestCase
                       twitter_handle: "asd")
   end
 
+  test "does_it_work" do
+    assert true;
+  end
+
   test "is_valid" do
     assert @user1.valid?
   end
@@ -38,4 +42,18 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user1.valid?
   end
 
+  test "password_not_long" do
+    @user1.password = "er"
+    assert @user1.valid?
+  end
+
+  test "email_not_valid" do
+    @user1.email = "notAnEmail"
+    assert @user1.valid?
+  end
+
+  test "email_valid" do
+    @user1.email = "email@email.com"
+    assert @user1.valid?
+  end
 end
