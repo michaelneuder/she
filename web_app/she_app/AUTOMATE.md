@@ -1,6 +1,6 @@
 # How to Automate Your Stuff
 
-##1: Put your code in the app as a rake task
+## 1) Put your code in the app as a rake task
 In the lib/tasks directory make a file name
 ```
 filename.rake
@@ -29,7 +29,7 @@ end
 ```
 You need the namespace and the task part these are how you call the task
 
-##2) Add to the Clock File
+## 2) Add to the Clock File
 In the app/clock.rb file add your task and frequency
 My file looks like
 ```ruby
