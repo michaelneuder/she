@@ -48,4 +48,4 @@ every(number.time, "name"){
 ```
 For the time, you can use .minutes, .hours, .seconds and make sure to
 
-put the rake task in \` things, the upper left keyboard key
+put the rake task in \`\` things, the upper left keyboard key
