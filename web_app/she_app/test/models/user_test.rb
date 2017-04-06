@@ -19,7 +19,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "is_not_valid" do
-    assert @user2.valid?
+    assert_not @user2.valid?
   end
 
   test "name_not_present" do
@@ -29,7 +29,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "name_present" do
     @user1.name = "Sophie Ekaf"
-    assert_not @user1.valid?
+    assert @user1.valid?
   end
 
   test "password_not_present" do
@@ -39,17 +39,17 @@ class UserTest < ActiveSupport::TestCase
 
   test "password_present" do
     @user1.password = @user1.password_confirmation = "paassword"
-    assert_not @user1.valid?
+    assert @user1.valid?
   end
 
   test "password_not_long" do
     @user1.password = "er"
-    assert @user1.valid?
+    assert_not @user1.valid?
   end
 
   test "email_not_valid" do
     @user1.email = "notAnEmail"
-    assert @user1.valid?
+    assert_not @user1.valid?
   end
 
   test "email_valid" do
