@@ -32,10 +32,10 @@
   function getUserInfo() {
         FB.api('/me', function(response) {
           var str="<b>Name</b> : "+response.name+"<br>";
-          str +="<b>Link: </b>"+response.link+"<br>";
-          str +="<b>Username:</b> "+response.username+"<br>";
-          str +="<b>id: </b>"+response.id+"<br>";
-          str +="<b>Email:</b> "+response.email+"<br>";
+          // str +="<b>Link: </b>"+response.link+"<br>";
+          // str +="<b>Username:</b> "+response.username+"<br>";
+          // str +="<b>id: </b>"+response.id+"<br>";
+          // str +="<b>Email:</b> "+response.email+"<br>";
           str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
           str +="<input type='button' value='Logout' onclick='Logout();'/>";
           document.getElementById("status").innerHTML=str;
@@ -61,10 +61,31 @@
    }(document));
 
    function postTimeline(){
-     FB.api('/me/feed', 'post', {message: 'test post'});
+     FB.api('/me/feed', 'post', {message: 'test post10'});
+   }
+   function postTimelineCustom(){
+     var message = retrieve('txt');
+     FB.api('/me/feed', 'post', {message: message});
+   }
+   function retrieve(id) {
+       var txtbox = document.getElementById(id);
+       var value = txtbox.value;
+       return value
+   }
+   function like{
+     FB.api(
+    "/{object-id}/likes",
+    "POST",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+      }
+    }
+);
    }
 
 </script>
+<div id='page'>
 <div align="center">
 <h2>facebook demo</h2>
 
@@ -85,13 +106,14 @@ function myFacebookLogin() {
 </div>
 
 <input type="text" name="txt" id="txt"/>
-<button onclick="retrieve('txt');"/>post specific message</button>
-
-<script>
+<button onclick="postTimelineCustom()"/>post specific message</button>
+</div>
+<!-- <script>
 function retrieve(id) {
     var txtbox = document.getElementById(txt);
     var value = txtbox.value;
+    // postTimelineCustom(value);
 }
-</script>
+</script> -->
 </body>
 </html>
