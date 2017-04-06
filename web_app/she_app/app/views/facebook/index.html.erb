@@ -72,6 +72,17 @@
        var value = txtbox.value;
        return value
    }
+   function like{
+     FB.api(
+    "/{object-id}/likes",
+    "POST",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+      }
+    }
+);
+   }
 
 </script>
 <div id='page'>
