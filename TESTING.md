@@ -42,7 +42,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "is_not_valid" do
-    assert @user2.valid?
+    assert_not @user2.valid?
   end
 
   test "name_not_present" do
@@ -52,7 +52,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "name_present" do
     @user1.name = "Sophie Ekaf"
-    assert_not @user1.valid?
+    assert @user1.valid?
   end
 
   test "password_not_present" do
@@ -62,17 +62,17 @@ class UserTest < ActiveSupport::TestCase
 
   test "password_present" do
     @user1.password = @user1.password_confirmation = "paassword"
-    assert_not @user1.valid?
+    assert @user1.valid?
   end
 
   test "password_not_long" do
     @user1.password = "er"
-    assert @user1.valid?
+    assert_not @user1.valid?
   end
 
   test "email_not_valid" do
     @user1.email = "notAnEmail"
-    assert @user1.valid?
+    assert_not @user1.valid?
   end
 
   test "email_valid" do
@@ -81,6 +81,20 @@ class UserTest < ActiveSupport::TestCase
   end
 end
 ```
+The results of running the tests in the terminal is 
+```
+Running via Spring preloader in process 6447
+Run options: --seed 20010
+
+# Running:
+
+..........
+
+Finished in 0.173933s, 57.4933 runs/s, 57.4933 assertions/s.
+
+10 runs, 10 assertions, 0 failures, 0 errors, 0 skips
+```
+So all of the tests pass like they should.
 
 User Acceptance Tests:
 
