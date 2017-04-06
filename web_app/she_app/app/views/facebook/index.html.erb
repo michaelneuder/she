@@ -27,7 +27,7 @@
                 getUserInfo();
             } else {
              console.log('User cancelled login or did not fully authorize.');
-            }},{scope: 'email,user_photos,user_videos'});}
+           }},{scope: 'email,user_photos,user_videos,publish_actions'});}
 
   function getUserInfo() {
         FB.api('/me', function(response) {
@@ -70,11 +70,12 @@
    function retrieve(id) {
        var txtbox = document.getElementById(id);
        var value = txtbox.value;
+       txtbox.value = ""
        return value
    }
-   function like{
+   function like() {
      FB.api(
-    "/{object-id}/likes",
+    "/114054302473773/likes",
     "POST",
     function (response) {
       if (response && !response.error) {
@@ -106,14 +107,10 @@ function myFacebookLogin() {
 </div>
 
 <input type="text" name="txt" id="txt"/>
-<button onclick="postTimelineCustom()"/>post specific message</button>
+<button onclick="postTimelineCustom()"/>post specific message</button><br>
+
+<button onclick="like()"/>like own profile picture</button>
+
 </div>
-<!-- <script>
-function retrieve(id) {
-    var txtbox = document.getElementById(txt);
-    var value = txtbox.value;
-    // postTimelineCustom(value);
-}
-</script> -->
 </body>
 </html>
