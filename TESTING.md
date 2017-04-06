@@ -1,18 +1,18 @@
-Who:
+# Who:
 Alex Urbanski
 Michael Neuder
 Nick Zimmerer
 Bum Kim
 Nischay Murthy
 
-Title:
+# Title:
 SHE
 
-Vision:
+# Vision:
 1. The freedom of being single, with the social status of being taken.
 2. To give users the appearance of having a significant other, and provide companionship to them.
 
-Automated Tests:
+# Automated Tests:
 
 To run automated tests. Go into the she/web_app/she_app directory 
 run from the command line 
@@ -96,7 +96,7 @@ Finished in 0.173933s, 57.4933 runs/s, 57.4933 assertions/s.
 ```
 So all of the tests pass like they should.
 
-User Acceptance Tests:
+# User Acceptance Tests:
 
 TEST 1
 Login to She
