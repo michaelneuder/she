@@ -1,6 +1,6 @@
 # How to Automate Your Stuff
 
-##1) Put your code in the app as a rake task
+##1: Put your code in the app as a rake task
 In the lib/tasks directory make a file name
 ```
 filename.rake
