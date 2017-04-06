@@ -14,7 +14,7 @@ Vision:
 
 Automated Tests:
 
-To run automated tests. Go into the she/web_app/she_app dirctory 
+To run automated tests. Go into the she/web_app/she_app directory 
 run from the command line 
 ```
 $ rails t
