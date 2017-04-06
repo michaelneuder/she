@@ -1,12 +1,11 @@
 <HTML>
+	<!-- ths chat bot was used from http://www.masswerk.at/elizabot/. i
+modified the initial response and moved around some of the SCRIPT
+to put it all into one file. i also changed some of the styles -->
 <HEAD>
 	<TITLE>Eliza (elizabot.js)</TITLE>
-	<!-- <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT> -->
-	<!-- <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT> -->
 
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-<!--
-
 
 function ElizaBot(noRandomFlag) {
 	this.noRandom= (noRandomFlag)? true:false;
@@ -350,14 +349,13 @@ if (typeof Array.prototype.shift == 'undefined') {
 	};
 }
 
-<!--  -->
-
-
+// eliza data.js
 var elizaInitials = [
-"How do you do.  Please tell me your problem.",
+// "?How do you do.  Please tell me your problem.",
 // additions (not original)
-"Please tell me what's been bothering you.",
-"Is something troubling you ?"
+// "Please tell me what's been bothering you.",
+// "Is something troubling you ?"
+"hey! hows it going?"
 ];
 
 var elizaFinals = [
@@ -422,22 +420,6 @@ var elizaSynons = {
 };
 
 var elizaKeywords = [
-
-/*
-  Array of
-  ["<key>", <rank>, [
-    ["<decomp>", [
-      "<reasmb>",
-      "<reasmb>",
-      "<reasmb>"
-    ]],
-    ["<decomp>", [
-      "<reasmb>",
-      "<reasmb>",
-      "<reasmb>"
-    ]]
-  ]]
-*/
 
 ["xnone", 0, [
  ["*", [
@@ -984,7 +966,7 @@ function elizaStep() {
 	}
 	else if (userinput != '') {
 		var usr = 'YOU:   ' + userinput;
-		var rpl ='ELIZA: ' + eliza.transform(userinput);
+		var rpl ='sophie: ' + eliza.transform(userinput);
 		elizaLines.push(usr);
 		elizaLines.push(rpl);
 		// display nicely
@@ -1001,7 +983,7 @@ function elizaStep() {
 	}
 	else if (elizaLines.length == 0) {
 		// no input and no saved lines -> output initial
-		var initial = 'ELIZA: ' + eliza.getInitial();
+		var initial = 'sophie: ' + eliza.getInitial();
 		elizaLines.push(initial);
 		f.e_display.value = initial + '\n';
 	}
@@ -1017,7 +999,7 @@ function elizaStep() {
 
 <CENTER>
 <P>&nbsp;</P>
-<H3>Eliza</H3>
+<H3>sophie</H3>
 <TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
 <FORM NAME="e_form" onsubmit="elizaStep();return false">
 <TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
@@ -1030,10 +1012,10 @@ function elizaStep() {
 </CENTER>
 
 <P>&nbsp;</P>
-<P ALIGN="center">For a comfortable terminal-like interface see the <A HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</A>.</P>
+<!-- <P ALIGN="center">For a comfortable terminal-like interface see the <A HREF="http://www.masswerk.at/elizabot/eliza.html">ELIZA-Terminal</A>.</P> -->
 <P>&nbsp;</P>
 <TABLE BORDER="0" CELLSPACING="12" CELLPADDDING="0">
-<TR><TD COLSPAN="2">
+<!-- <TR><TD COLSPAN="2">
 ELIZA is a natural language conversation program described by Joseph Weizenbaum in January 1966 <A HREF="#ELIZA">[1]</A>.<BR>
 It features the dialog between a human user and a computer program representing a mock Rogerian psychotherapist.<BR>
 The original program was implemented on the IBM 7094 of the Project MAC time-sharing system at MIT and was written in MAD-SLIP.<BR><BR>
@@ -1181,11 +1163,13 @@ Note:   &quot;elizaPostTransforms&quot; is not a standard ELIZA feature and was 
     in: Communications of the ACM; Volume 9 , Issue 1 (January 1966): p 36-45.
 </TD>
 </TR>
-<TR><TD COLSPAN="2">&nbsp;</TD></TR>
-<TR><TD COLSPAN="2"><SMALL>&gt; <A HREF="#top">top of page</A></SMALL></TD></TR>
-<TR><TD COLSPAN="2">&nbsp;</TD></TR>
-<TR><TD COLSPAN="2" STYLE="font-family: arial,helvetica,sans-serif; font-size: 12px;">N. Landsteiner 2005; &lt;<A HREF="http://www.masswerk.at/" TARGET="_blank">http://www.masswerk.at</A>&gt;</SMALL></TD></TR>
-<TR><TD COLSPAN="2">&nbsp;</TD></TR>
+<TR><TD COLSPAN="2">&nbsp;</TD></TR> -->
+<!-- <TR><TD COLSPAN="2"><SMALL>&gt; <A HREF="#top">top of page</A></SMALL></TD></TR>
+<TR><TD COLSPAN="2">&nbsp;</TD></TR> -->
+<br>
+<br><br>
+<TR><TD COLSPAN="2" STYLE="font-family: arial,helvetica,sans-serif; font-size: 12px;">ELIZA bot from N. Landsteiner 2005</SMALL></TD></TR>
+<!-- <TR><TD COLSPAN="2">&nbsp;</TD></TR> -->
 </TABLE>
 
 </BODY>

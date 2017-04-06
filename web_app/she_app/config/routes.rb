@@ -8,9 +8,6 @@ Rails.application.routes.draw do
 
   get 'facebook/index'
 
-  # get '/chat/elizabot.js'
-  # get '/chat/elizadata.js'
-
   root 'static_pages#home'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
