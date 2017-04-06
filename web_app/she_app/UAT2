@@ -1,0 +1,22 @@
+Chat with girlfriend
+    Chat with girlfriend using chat box 
+Description
+    Test chat box, carry out conversation with girlfriend, and exit
+Pre-conditions
+    User has valid user name and password
+    User is logged into She account
+Test steps
+    1. Click on chat box tab
+    2. Type in chat message and hit Enter
+    3. Continue conversation with girlfriend
+    4. Click exit button
+Expected result
+    User should be able to chat with girlfriend and exit 
+Actual result
+    User has conversation with girlfriend and exits chat box 
+Status (Pass/Fail)
+    Pass
+Notes
+    N/A
+Post-conditions
+    User is satisfied with conversation and is redirected back to the She home page after exiting chat box
