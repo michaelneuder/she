@@ -13,7 +13,11 @@ Vision:
 2. To give users the appearance of having a significant other, and provide companionship to them.
 
 Automated Tests:
-
+To run automated tests. Go into the she/web_app/she_app dirctory 
+run from the command line 
+```
+$ rails t
+```
 
 User Acceptance Tests:
 
