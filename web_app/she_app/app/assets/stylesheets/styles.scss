@@ -42,16 +42,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &.block-2 {
+    background-color: white;
     h1 {
-      color: $pink;
+      color: $dark-gray;
       padding-bottom: 5px;
       margin-bottom: 0px;
       font-size: 3em;
     }
 
     p {
-      border-top: 4px solid rgb(255,192,203);
-      color: $pink;
+      border-top: 4px solid $dark-gray;
+      color: $dark-gray;
       padding-top: 5px;
       margin: 0;
       font-size: 2em;
@@ -427,12 +428,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 7em;
 }
 
-.bubble {
+.bubble1 {
   width: 100px;
   height: 100px;
   border-radius: 50px;
   // background-color: $pink;
   background: image-url("arrow-white2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: table;
+  align-content: center;
+  margin: auto;
+}
+
+.bubble2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  // background-color: $pink;
+  background: image-url("arrow-gray.png");
   background-repeat: no-repeat;
   background-position: center;
   display: table;
