@@ -49,26 +49,26 @@ namespace :dm do
 
     #puts messages
     messages.each do |message|
-      puts message['text'] + ' ' + message['created_at'] + ' ' + message['sender']['screen_name']
+      # puts message['text'] + ' ' + message['created_at'] + ' ' + message['sender']['screen_name']
       if receive_times.key?(message['sender']['screen_name']) == false
         receive_times[message['sender']['screen_name']] = [message['created_at'], message['text']]
       end
     end
 
-    puts '======================================='
-    puts receive_times
-    puts '======================================='
+    # puts '======================================='
+    # puts receive_times
+    # puts '======================================='
 
     messages2.each do |message|
-      puts message['created_at'] + ' ' + message['recipient']['screen_name']
+      # puts message['created_at'] + ' ' + message['recipient']['screen_name']
       if send_times.key?(message['recipient']['screen_name']) == false
         send_times[message['recipient']['screen_name']] = [message['created_at'], message['text']]
       end
     end
 
-    puts '======================================='
-    puts send_times
-    puts '======================================='
+    # puts '======================================='
+    # puts send_times
+    # puts '======================================='
 
     bot = Cleverbot.new('7xnrq8Em5MZGUajt','lPW0loSq26Cy99ullhZf7HoGAAFu6kx1')
 
@@ -121,6 +121,61 @@ namespace :dm do
 
 
     path2 = "/1.1/statuses/retweet/#{messages[0]['id_str']}.json"
+    address2 = URI("#{baseurl}#{path2}")
+    request2 = Net::HTTP::Post.new address2.request_uri
+
+    http2 = Net::HTTP.new address2.host, address2.port
+    http2.use_ssl = true
+    http2.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request2.oauth! http2, $consumer_key, $access_token
+    http2.start
+    response2 = http2.request request2
+
+    messages2 = nil
+    if response2.code == '200'
+      messages2 = JSON.parse(response2.body)
+    end
+
+    # puts messages2
+
+    # puts messages
+
+    # puts messages[0]['statuses']['text']
+
+    # messages.each do |message|
+    #   puts message['text']
+    #   puts "Id is: "
+    #   puts message['id_str']
+    # end
+
+  end
+
+  desc "Favorite Tweet"
+  task fav_tweet: :environment do
+    #Set up the base url for the twitter api
+    baseurl = "https://api.twitter.com"
+
+    #Set up the request for the direst messages
+    path = "/1.1/statuses/user_timeline.json?screen_name=AlexUrbanski&count=1"
+    address = URI("#{baseurl}#{path}")
+    request = Net::HTTP::Get.new address.request_uri
+
+    http = Net::HTTP.new address.host, address.port
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request.oauth! http, $consumer_key, $access_token
+    http.start
+    response = http.request request
+
+    messages = nil
+    if response.code == '200'
+      messages = JSON.parse(response.body)
+    end
+
+
+    path2 = "/1.1/favorites/create.json?id=#{messages[0]['id_str']}"
     address2 = URI("#{baseurl}#{path2}")
     request2 = Net::HTTP::Post.new address2.request_uri
 
