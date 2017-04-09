@@ -6,10 +6,10 @@ require 'oauth'
 #$bot = Cleverbot.new('RtW9RmyVVExzC3xi','jpaekuzPDA5HRUNuAqtkOztlErHgsWSN')
 
 $client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = "#{ENV['consumer_key']}"
-  config.consumer_secret     = "#{ENV['consumer_secret']}"
-  config.access_token        = "#{ENV['access_token']}"
-  config.access_token_secret = "#{ENV['consumer_secret']}"
+  config.consumer_key        = "kA7gKxSbjKQ7JXRSHQCnfAMUN"
+  config.consumer_secret     = "1t3R52Qp8DfAt1MbXfra9xA51OQrumBfpUBFhAoCckUlQ53pQs"
+  config.access_token        = "850774011713925120-lSMiCOx77TSbjpqtfXBPD2KVaRmo24T"
+  config.access_token_secret = "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX"
 end
 
 #Cant get this to work
@@ -18,8 +18,8 @@ end
 #$access_token = OAuth::Token.new((ENV['access_token']).to_s, (ENV['access_secret']).to_s)
 
 $consumer_key = OAuth::Consumer.new(
-    "1uRJLIi5lyOufWTVjje5XHKG6",
-    "deuZGezqTkP6KIGt5nxQ6n0XEZECST1LvlKw0JgCZ909XClKPk")
+    "kA7gKxSbjKQ7JXRSHQCnfAMUN",
+    "1t3R52Qp8DfAt1MbXfra9xA51OQrumBfpUBFhAoCckUlQ53pQs")
 $access_token = OAuth::Token.new(
-    "377135231-JLlSJoXq1gCr655ccLidWMQRuIgMobFEVaOnEymP",
-    "g8FvyFgsJqGQIYokixrOFbtzEsOixqZ5Ul3bm2wC1a5Fx")
+    "850774011713925120-lSMiCOx77TSbjpqtfXBPD2KVaRmo24T",
+    "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX")
