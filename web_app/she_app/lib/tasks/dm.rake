@@ -73,10 +73,10 @@ namespace :dm do
     bot = Cleverbot.new('7xnrq8Em5MZGUajt','lPW0loSq26Cy99ullhZf7HoGAAFu6kx1')
 
     client = Twitter::REST::Client.new do |config|
-      config.consumer_key        = "pZz9ZwlwdI3IzmwQp1kdwO1Pl"
-      config.consumer_secret     = "2jjx9C5trl0r8L1ptaS8ASM2vrwnyXjPQmwYdpJM58FpWjgVxl"
-      config.access_token        = "377135231-VEpQuLGAsdyKkoTwv35LUC3P7cSSoPpXpTSZYCLm"
-      config.access_token_secret = "65Kgx30uTliAYnnOTYWN3j8VGhCvBHtGGFyZmCplx5rFZ"
+      config.consumer_key        = "kA7gKxSbjKQ7JXRSHQCnfAMUN"
+      config.consumer_secret     = "1t3R52Qp8DfAt1MbXfra9xA51OQrumBfpUBFhAoCckUlQ53pQs"
+      config.access_token        = "850774011713925120-lSMiCOx77TSbjpqtfXBPD2KVaRmo24T"
+      config.access_token_secret = "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX"
     end
 
     receive_times.each do |name, arr|
