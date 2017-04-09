@@ -391,13 +391,15 @@ h1, h2, h3, h4, h5, h6 {
 
 // links to scroll down by a page
 .down-by-page {
-    color: $pink;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
     display: block;
-    font-size: 2em;
+    vertical-align: middle;
+    font-size: 3em;
     text-decoration: none;
-    margin-top: 7em;
-    text-align: center;
+    padding: 20px;
     outline-style: none;
+    padding-bottom: 60px;
     &:link, &:hover, &:visited, &:active {
         text-decoration: none;
     }
@@ -408,15 +410,34 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
     }
     &#how {
-        margin-top: 8em;
     }
     &#signup {
-        margin-top: 1em;
         color: white;
         &:hover {
             color: $pink;
         }
     }
+}
+
+.row-btn {
+  margin-top: 7em;
+}
+
+.row-btn2 {
+  margin-top: 7em;
+}
+
+.bubble {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  // background-color: $pink;
+  background: image-url("arrow-white2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: table;
+  align-content: center;
+  margin: auto;
 }
 
 // ==============================

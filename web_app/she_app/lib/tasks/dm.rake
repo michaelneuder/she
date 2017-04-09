@@ -47,28 +47,28 @@ namespace :dm do
     receive_times = Hash.new
     send_times = Hash.new
 
-    #puts messages
+    puts messages
     messages.each do |message|
-      # puts message['text'] + ' ' + message['created_at'] + ' ' + message['sender']['screen_name']
+      puts message['text'] + ' ' + message['created_at'] + ' ' + message['sender']['screen_name']
       if receive_times.key?(message['sender']['screen_name']) == false
         receive_times[message['sender']['screen_name']] = [message['created_at'], message['text']]
       end
     end
 
-    # puts '======================================='
-    # puts receive_times
-    # puts '======================================='
+    puts '======================================='
+    puts receive_times
+    puts '======================================='
 
     messages2.each do |message|
-      # puts message['created_at'] + ' ' + message['recipient']['screen_name']
+      puts message['created_at'] + ' ' + message['recipient']['screen_name']
       if send_times.key?(message['recipient']['screen_name']) == false
         send_times[message['recipient']['screen_name']] = [message['created_at'], message['text']]
       end
     end
 
-    # puts '======================================='
-    # puts send_times
-    # puts '======================================='
+    puts '======================================='
+    puts send_times
+    puts '======================================='
 
     bot = Cleverbot.new('7xnrq8Em5MZGUajt','lPW0loSq26Cy99ullhZf7HoGAAFu6kx1')
 
