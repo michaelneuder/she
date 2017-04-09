@@ -7,6 +7,7 @@ to put it all into one file. i also changed some of the styles -->
 
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 
+
 function ElizaBot(noRandomFlag) {
 	this.noRandom= (noRandomFlag)? true:false;
 	this.capitalizeFirstLetter=true;
@@ -966,7 +967,8 @@ function elizaStep() {
 	}
 	else if (userinput != '') {
 		var usr = 'YOU:   ' + userinput;
-		var rpl ='sophie: ' + eliza.transform(userinput);
+		var rpl = eliza.transform(userinput);
+		responsiveVoice.speak(rpl);
 		elizaLines.push(usr);
 		elizaLines.push(rpl);
 		// display nicely
@@ -983,8 +985,9 @@ function elizaStep() {
 	}
 	else if (elizaLines.length == 0) {
 		// no input and no saved lines -> output initial
-		var initial = 'sophie: ' + eliza.getInitial();
+		var initial = eliza.getInitial();
 		elizaLines.push(initial);
+		responsiveVoice.speak(initial);
 		f.e_display.value = initial + '\n';
 	}
 	f.e_input.value = '';
@@ -994,6 +997,7 @@ function elizaStep() {
 //-->
 </SCRIPT>
 </HEAD>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 <BODY TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0" STYLE="border:0" onload="window.setTimeout('elizaReset()',100)"><A NAME="top"></A>
 
@@ -1006,6 +1010,7 @@ function elizaStep() {
 <TR VALIGN="middle">
 	<TD><INPUT TYPE="text" NAME="e_input" SIZE="50" AUTOCOMPLETE='off'></TD>
 	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout('elizaReset()',100)"></TD>
+		<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
 </TR>
 </FORM>
 </TABLE>
