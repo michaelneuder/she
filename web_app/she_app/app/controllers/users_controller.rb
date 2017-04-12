@@ -18,7 +18,6 @@ class UsersController < ApplicationController
         config.access_token        = "850774011713925120-lSMiCOx77TSbjpqtfXBPD2KVaRmo24T"
         config.access_token_secret = "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX"
       end
-      client.create_direct_message(@user.twitter_handle, "Heyyyyyyy!!")
     else
       render 'new'
     end
