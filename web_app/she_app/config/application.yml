@@ -15,3 +15,9 @@ twilioAccountSID: AC8f230f64baecd2bb60e02625b79142b4
 twilioAuthToken: 78bf2a081f6705d13ff800876a935946
 twilioNumber: "+17207091596"
 clientNumber: "+13038956020"
+
+# Twitter secrets
+twitterConsumerKey: "kA7gKxSbjKQ7JXRSHQCnfAMUN"
+twitterConsumerSecret: "1t3R52Qp8DfAt1MbXfra9xA51OQrumBfpUBFhAoCckUlQ53pQs"
+twitterAccessToken: "850774011713925120-lSMiCOx77TSbjpqtfXBPD2KVaRmo24T"
+twitterAccessTokenSecret: "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX"
