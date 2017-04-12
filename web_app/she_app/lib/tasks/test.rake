@@ -1,5 +1,3 @@
-
-
 namespace :test do
   desc "Output users"
   task out: :environment do
@@ -9,7 +7,7 @@ namespace :test do
   end
   desc "User"
   task :user => :environment do
-    puts User.all
+    puts User.all.inspect
   end
 
 end
