@@ -13,11 +13,11 @@
 <P>&nbsp;</P>
 <H3>sophie</H3>
 <TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
-<FORM NAME="e_form" onsubmit="send();">
+<FORM NAME="e_form" onsubmit="ask();">
 <TR><TD COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="20"></TEXTAREA></TD></TR>
 <TR VALIGN="middle">
 	<TD><INPUT TYPE="text" NAME="e_input" SIZE="50" AUTOCOMPLETE='off' id="user_text"></TD>
-	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;"> <INPUT TYPE="reset" VALUE="Reset" onClick="window.setTimeout(100)"></TD>
+	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Talk&nbsp;">
 		<INPUT TYPE="text" id="response">
 </TR>
 </FORM>
@@ -31,40 +31,20 @@
 <br>
 <br><br>
 </TABLE>
-<!--
-<SCRIPT>
-var bot = new cleverbot('vaBi6CXPo2OmHyLY','ZHffBRgPkoNversY3snVpXtUpfIrpAkH');
-bot.setNick("sophie")
-bot.create(function (err, 'sophie') {
-});
-bot.ask("Just a small town girl", function (err, response) {
-  console.log(response); // Will likely be: "Living in a lonely world"
-	textbox = document.getElementById('response')
-	textbox.value = response
 
-});
-	function send () {
-		textbox = document.getElementById('response')
-		// textbox.value = "fuck"
-		bot.ask("Just a small town girl", function (err, response) {
-		  console.log(response); // Will likely be: "Living in a lonely world"
-			textbox = document.getElementById('response')
-			textbox.value = response
 
-	}
-</SCRIPT> -->
 <script>
 
 var bot = new cleverbot('vaBi6CXPo2OmHyLY','ZHffBRgPkoNversY3snVpXtUpfIrpAkH');
-bot.setNick("sophie")
 
 bot.create();
-function send(){
-	var question = document.getElementById('user_text')
-	question.value = 'hello'
+var question = document.getElementById('user_text')
+var response = document.getElementById('response')
 
-bot.ask("do you love me", function (err, response) {
-  console.log(response); // Will likely be: "Living in a lonely world"
+function ask(){
+	bot.ask(question.value, function (err, response) {
+	  console.log(response);
+		response.value = response
 });}
 
 </script>

@@ -88,10 +88,11 @@
 </script>
 <div id='page'>
 <div align="center">
-<h2>facebook demo</h2>
+<h2 id='title'>facebook</h2>
 
 <div id="status">
-  <button onclick="Login()">log in to your facebook</button>
+  <button onclick="Login()">log in</button>
+  <br>
 </div>
 
 <script>
@@ -99,17 +100,17 @@ function myFacebookLogin() {
   FB.login(function(){}, {scope: 'publish_actions'});
 }
 </script>
-<button onclick="myFacebookLogin()">allow permissions</button>
+<button onclick="myFacebookLogin()">allow</button>
 
-<div id='postTimeline'>
+<!-- <div id='postTimeline'>
   <button onclick="postTimeline()"> post to your timeline </button>
-</div>
+</div> -->
 </div>
 
 <input type="text" name="txt" id="txt"/>
-<button onclick="postTimelineCustom()"/>post specific message</button><br>
+<button onclick="postTimelineCustom()"/>post message</button><br>
 
-<button onclick="like()"/>like own profile picture</button>
+<!-- <button onclick="like()"/>like own profile picture</button> -->
 
 </div>
 </body>
