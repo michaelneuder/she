@@ -8,8 +8,8 @@ namespace :test do
     end
   end
   desc "User"
-  task user: :environment do
-    puts User.all.to_s
+  task :user => :environment do
+    puts User.all
   end
 
 end
