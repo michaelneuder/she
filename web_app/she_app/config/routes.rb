@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get "/about", to: 'static_pages#about'
   resources :users
   post 'twilio/voice' => 'twilio#voice'
+
+  get '/signed_up', to: 'static_pages#signed_up'
 end
