@@ -10,4 +10,5 @@ class ChatControllerTest < ActionDispatch::IntegrationTest
     get chat_clev_url
     assert_response :success
   end
+
 end
