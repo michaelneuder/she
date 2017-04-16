@@ -205,4 +205,86 @@ namespace :dm do
     # end
 
   end
+
+  desc "reteet other tweets"
+  task retweet1: :environment do
+    #Set up the base url for the twitter api
+    baseurl = "https://api.twitter.com"
+
+    num = rand(0..5)
+    if num == 0
+      screen_name = "CuteLovelyPosts"
+    elsif num == 1
+      screen_name = "LoveQuotes"
+    elsif num == 2
+      screen_name = "Relationship"
+    elsif num == 3
+      screen_name = "ohteenquotes"
+    elsif num == 4
+      screen_name = "GoalsBible"
+    else
+      screen_name = "RelationGoaIs"
+    end
+
+    puts "screen name: " + screen_name
+
+    #Set up the request for the direst messages
+    path = "/1.1/statuses/user_timeline.json?screen_name=#{screen_name}&count=1"
+    puts "Path: " + path
+    address = URI("#{baseurl}#{path}")
+    request = Net::HTTP::Get.new address.request_uri
+
+    http = Net::HTTP.new address.host, address.port
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request.oauth! http, $consumer_key, $access_token
+    http.start
+    response = http.request request
+
+    puts request
+    messages = nil
+    if response.code == '200'
+      puts 'it worked!'
+      messages = JSON.parse(response.body)
+    end
+
+
+    path2 = "/1.1/statuses/retweet/#{messages[0]['id_str']}.json"
+    puts "Path2: " + path2
+    address2 = URI("#{baseurl}#{path2}")
+    puts address2
+    request2 = Net::HTTP::Post.new address2.request_uri
+
+
+    http2 = Net::HTTP.new address2.host, address2.port
+    http2.use_ssl = true
+    http2.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request2.oauth! http2, $consumer_key, $access_token
+    http2.start
+    response2 = http2.request request2
+    puts request2
+
+    puts response2
+    messages2 = nil
+    puts response2.code
+    if response2.code == '200'
+      puts "It worked again"
+      messages2 = JSON.parse(response2.body)
+    end
+
+    puts messages2
+
+    # puts messages
+
+    # puts messages[0]['statuses']['text']
+
+    # messages.each do |message|
+    #   puts message['text']
+    #   puts "Id is: "
+    #   puts message['id_str']
+    # end
+
+  end
 end
