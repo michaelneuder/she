@@ -12,3 +12,7 @@ every(3.minutes, 'retweet'){
 every(3.minutes, 'favorite'){
   `rake dm:fav_tweet`
 }
+
+every(59.minutes, 'post'){
+  `rake post:timeline_post`
+}
