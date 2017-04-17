@@ -79,12 +79,25 @@
     "POST",
     function (response) {
       if (response && !response.error) {
-        /* handle the result */
+        console.log("yes!")
       }
     }
-);
+    );
    }
 
+   function get_id(){
+   FB.api(
+    "/",
+    {
+        "id": "https:\/\/www.facebook.com\/photo.php?fbid=114054302473773&set=a.114054315807105.1073741826.100016076114632&type=3&theater"
+    },
+    function (response) {
+      if (response && !response.error) {
+        console.log(response)
+      }
+    }
+  );
+}
 </script>
 <div id='page'>
 <div align="center">
@@ -109,7 +122,7 @@ function myFacebookLogin() {
 
 <input type="text" name="txt" id="txt"/>
 <button onclick="postTimelineCustom()"/>post message</button><br>
-
+<button onclick="get_id()"/>like test</button><br>
 <!-- <button onclick="like()"/>like own profile picture</button> -->
 
 </div>
