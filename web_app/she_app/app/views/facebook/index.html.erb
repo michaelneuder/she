@@ -94,9 +94,29 @@
     function (response) {
       if (response && !response.error) {
         console.log(response)
+       console.log("/" + response + "/likes"),
+       "POST",
+       function (response) {
+         if (response && !response.error) {
+           console.log("yes!")
+         }
+       }
       }
     }
   );
+
+}
+
+function facebook_send_message(to) {
+    FB.ui({
+        app_id:'1395971467128300',
+        method: 'send',
+        name: "Sophie Ekaf",
+        link: 'https://www.google.com',
+        to: to,
+        message: 'a custom message',
+        description:'this is a test message'
+    });
 }
 </script>
 <div id='page'>
@@ -123,6 +143,7 @@ function myFacebookLogin() {
 <input type="text" name="txt" id="txt"/>
 <button onclick="postTimelineCustom()"/>post message</button><br>
 <button onclick="get_id()"/>like test</button><br>
+<button onclick="facebook_send_message()"/>send fb message</button><br>
 <!-- <button onclick="like()"/>like own profile picture</button> -->
 
 </div>
