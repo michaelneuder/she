@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 // ==============================
 //       ABOUT PAGE STYLES
 // ==============================
-.about-text{
+.about-text {
   color: white;
   font-size: 2em;
 }
@@ -466,4 +466,63 @@ h1, h2, h3, h4, h5, h6 {
 .error-list {
     color: rgb(255,100,100);
     font-size: 1.2em;
+}
+
+// ==============================
+//       SIGNED UP STYLES
+// ==============================
+.about-row {
+  height: 100%;
+}
+.left-arrow {
+  font-size: 150px;
+  text-align: center;
+  height: 100%;
+  padding-top: 10%;
+}
+.right-arrow {
+  font-size: 150px;
+  text-align: center;
+  height: 100%;
+  padding-top: 10%;
+}
+.is-showing {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+.arrow-showing {
+  display: block;
+}
+
+.arrow-hidden {
+  display: none;
+}
+
+.in {
+  animation: animate-in 500ms ease-in-out forwards;
+}
+
+.out {
+  animation: animate-out 500ms ease-in-out forwards;
+}
+
+@keyframes animate-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
