@@ -7,12 +7,17 @@ namespace :test do
     end
   end
 
-  desc "Output users"
+  desc "Output first user handle"
   task handle: :environment do
     puts User.first.twitter_handle
   end
 
-
+  desc "Output handles"
+  task handle: :environment do
+    User.first.each do |user|
+      puts user.twitter_handle
+    end
+  end
 
   desc "User"
   task :user => :environment do
