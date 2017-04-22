@@ -155,7 +155,7 @@ namespace :dm do
   task fav_tweet: :environment do
     #Set up the base url for the twitter api
     baseurl = "https://api.twitter.com"
-    User.each do |user|
+    User.all.each do |user|
 
       #Set up the request for the direst messages
       path = "/1.1/statuses/user_timeline.json?screen_name=#{user.twitter_handle}&count=1"
