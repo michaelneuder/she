@@ -288,4 +288,14 @@ namespace :dm do
     # end
 
   end
+
+  desc "reteet other tweets"
+  task kyrie: :environment do
+    User.all.each do |user|
+      puts user.twitter_handle
+    end
+
+  end
+
+
 end

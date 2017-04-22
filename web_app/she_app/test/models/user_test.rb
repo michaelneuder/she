@@ -56,4 +56,14 @@ class UserTest < ActiveSupport::TestCase
     @user1.email = "email@email.com"
     assert @user1.valid?
   end
+
+  test "twitter_handle" do
+    @user1.twitter_handle = "AlexUrbanski"
+    assert @user1.valid?
+  end
+
+  test "not_twitter_handle" do
+    @user1.twitter_handle = "@AlexUrbanski"
+    assert_not @user1.valid?
+  end
 end
