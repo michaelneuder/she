@@ -4,12 +4,13 @@
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1395971467128300', // Set YOUR APP ID
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
+      appId      : '1395971467128300',
+      status     : true,
+      cookie     : true,
       xfbml      : true  // parse XFBML
     });
 
+    // authorization
     FB.Event.subscribe('auth.authResponseChange', function(response){
      if (response.status === 'connected'){
         document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
@@ -18,8 +19,7 @@
         document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
     } else {
         document.getElementById("message").innerHTML +=  "<br>Logged Out";
-    }});
-    };
+    }});};
 
     function Login(){
         FB.login(function(response) {
@@ -28,6 +28,7 @@
             } else {
              console.log('User cancelled login or did not fully authorize.');
            }},{scope: 'email,user_photos,user_videos,publish_actions'});}
+
 
   function getUserInfo() {
         FB.api('/me', function(response) {
@@ -80,10 +81,15 @@
     function (response) {
       if (response && !response.error) {
         console.log("yes!")
-      }
-    }
-    );
-   }
+      }});}
+
+    function get_like_number(){
+      FB.api(
+    "/114054302473773/likes",
+    function (response) {
+      if (response && !response.error) {
+        console.log(response)
+      }});}
 
    function get_id(){
    FB.api(
@@ -99,13 +105,7 @@
        function (response) {
          if (response && !response.error) {
            console.log("yes!")
-         }
-       }
-      }
-    }
-  );
-
-}
+         }}}});}
 
 function facebook_send_message(to) {
     FB.ui({
@@ -116,8 +116,8 @@ function facebook_send_message(to) {
         to: to,
         message: 'a custom message',
         description:'this is a test message'
-    });
-}
+    });}
+
 </script>
 <div id='page'>
 <div align="center">
@@ -144,7 +144,7 @@ function myFacebookLogin() {
 <button onclick="postTimelineCustom()"/>post message</button><br>
 <button onclick="get_id()"/>like test</button><br>
 <button onclick="facebook_send_message()"/>send fb message</button><br>
-<!-- <button onclick="like()"/>like own profile picture</button> -->
+<button onclick="get_like_number()"/>like own profile picture</button>
 
 </div>
 </body>
