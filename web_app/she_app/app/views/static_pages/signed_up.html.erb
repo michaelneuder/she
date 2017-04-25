@@ -1,14 +1,42 @@
 <% provide(:title, "New User") %>
 <div class="container-fluid block block-about-1">
   <div class="layer">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h1>Thanks for Signing Up</h1>
-        <p class="about-text">
-          First you're going to want to follow @SophieEkaf on twitter. Then you
-          can start direct messaging her.
+    <div class="row about-row">
+      <div class="col-md-3 left-arrow">
+        <p class="arrow-hidden">
+          <
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="first is-showing">
+          <h1>Step 1</h1>
+          <p class="about-text">
+            First, if your twitter account is protected, you're going to want to accept
+            Sophie's request to follow you. Then you're going to want to follow @SophieEkaf on twitter.
+          </p>
+          <%= image_tag("follow.png", class: "center_me") %>
+        </div>
+        <div class="second is-hidden">
+          <h1>Step 2</h1>
+          <p class="about-text">
+            Now you can direct message Sophie on twitter. Click on messages in the
+            navigation bar on twitter. Then click on new message, and you can
+            send a message to Sophie. She'll message you back in a couple of minutes.
 
-          You're also going to want to 
+          </p>
+          <%= image_tag("dm.png", class: "center_me") %>
+        </div>
+        <div class="third is-hidden">
+          <h1>Step 3</h1>
+          <p class="about-text">
+            Now that you're all set up. Click on some of the other links above
+            to see what else she can do for you.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 right-arrow">
+        <p class="arrow-showing">
+          >
         </p>
       </div>
     </div>
