@@ -1,5 +1,7 @@
 
 namespace :test do
+  # @param User [Object] the user object that holds all users
+  # @note output all users
   desc "Output users"
   task out: :environment do
     User.all.each do |user|
@@ -7,6 +9,8 @@ namespace :test do
     end
   end
 
+  # @param User [Object] the user object that holds all users
+  # @note output all users
   desc "Output first user handle"
   task handle: :environment do
     puts User.first.twitter_handle
