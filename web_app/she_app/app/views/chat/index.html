@@ -8,6 +8,7 @@ to put it all into one file. i also changed some of the styles -->
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
 
 
+// constructor
 function ElizaBot(noRandomFlag) {
 	this.noRandom= (noRandomFlag)? true:false;
 	this.capitalizeFirstLetter=true;
@@ -18,6 +19,7 @@ function ElizaBot(noRandomFlag) {
 	this.reset();
 }
 
+// reset
 ElizaBot.prototype.reset = function() {
 	this.quit=false;
 	this.mem=[];

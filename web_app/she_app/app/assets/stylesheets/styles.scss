@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
       color: black;
-      margin-top: 25%;
+      margin-top: 18%;
       padding-bottom: 5px;
       margin-bottom: 0px;
       font-size: 3em;
@@ -123,6 +123,21 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  // ======================================================
+  //                     USER BLOCKS
+  // ======================================================
+  &.block-user-1 {
+    background: image-url("japanese-cherry.jpg");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+
+    h1{
+      padding-top: 10%;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
   // ======================================================
   //                   NEW USER BLOCKS
   // ======================================================
@@ -375,19 +390,13 @@ h1, h2, h3, h4, h5, h6 {
 // SCROLL BUTTONS
 // button to scroll to top of page
 .back-to-top {
-    background-color: rgba(255, 255, 255, .3);
-    padding: 1vh;
     position: fixed;
     display: none;
     margin-right: auto;
     margin-left: auto;
-    bottom: 1vh;
-    //right: 1vh;
-    height: 5vh;
-    width: 5vh;
-    &:hover {
-        background-color: rgba(255, 255, 255, .5);
-    }
+    bottom: 3vh;
+    // height: 5vh;
+    // width: 5vh;
 }
 
 // links to scroll down by a page
@@ -488,6 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .is-showing {
   display: block;
+  text-align: center;
 }
 
 .is-hidden {
@@ -525,4 +535,9 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     opacity: 1;
   }
+}
+
+img.center_me {
+  margin-left: auto;
+  margin-right: auto;
 }

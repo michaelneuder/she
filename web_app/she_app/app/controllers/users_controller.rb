@@ -1,14 +1,22 @@
 class UsersController < ApplicationController
+  # @param params [Hash] the search parameters
+  # @note A route to show all users
   def show
     @user = User.find(params[:id])
   end
 
+  # @note A route to setup page for a new user
   def new
     @user = User.new
   end
 
+  # @param user_params [Hash] the post parameters
+  # @note A route to create a new user. On user save follow the user's twitter account. If the login fails, generate a the signup page again.
   def create
+
+
     @user = User.new(user_params)
+
     if @user.save
       log_in(@user)
       baseurl = "https://api.twitter.com"
@@ -31,6 +39,7 @@ class UsersController < ApplicationController
       puts response.code
 
 
+      #Make sure message passes
       messages = nil
       if response.code == '200'
         messages = JSON.parse(response.body)
@@ -38,11 +47,14 @@ class UsersController < ApplicationController
       end
       redirect_to signed_up_path
     else
+
       render 'new'
     end
   end
 
   private
+  # @param :user [Symbol] the user key
+  # @note Declare strong parameters that are permitted
     def user_params
       params.require(:user).permit(:name, :email, :twitter_handle, :password, :password_confirmation)
     end
