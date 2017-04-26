@@ -7,14 +7,13 @@ class TwilioController < ApplicationController
         twilioSID = ENV['twilioAccountSID']
         twilioAuthToken = ENV['twilioAuthToken']
         twilioNumber = ENV['twilioNumber']
-        clientNumber = ENV['clientNumber']
 
         @client = Twilio::Rest::Client.new twilioSID, twilioAuthToken
     
         @client.account.sms.messages.create(
          :from => twilio_number,
-         :to => phone_number,
-         :body => "Thank you for signing up! She is waiting..."
+         :to => "+1" + phone_number,
+         :body => "Thank you for signing up!"
         )
     end
 end
