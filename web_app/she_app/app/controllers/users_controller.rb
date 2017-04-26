@@ -56,6 +56,6 @@ class UsersController < ApplicationController
   # @param :user [Symbol] the user key
   # @note Declare strong parameters that are permitted
     def user_params
-      params.require(:user).permit(:name, :email, :twitter_handle, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :phone_number, :twitter_handle, :password, :password_confirmation)
     end
 end
