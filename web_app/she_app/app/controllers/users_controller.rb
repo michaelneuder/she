@@ -1,3 +1,4 @@
+require "twilio-ruby"
 class UsersController < ApplicationController
   # @param params [Hash] the search parameters
   # @note A route to show all users
@@ -52,20 +53,20 @@ class UsersController < ApplicationController
     end
   end
 
-def send_message
-    phone_number = params[:phone_number]
+  def send_message
+    phone_number = ENV['clientNumber']
     twilioSID = ENV['twilioAccountSID']
     twilioAuthToken = ENV['twilioAuthToken']
     twilioNumber = ENV['twilioNumber']
 
-    @client = Twilio::Rest::Client.new twilioSID, twilioAuthToken
+    @client = Twilio::REST::Client.new twilioSID, twilioAuthToken
 
     @client.account.sms.messages.create(
-     :from => twilio_number,
-     :to => "+1" + phone_number,
-     :body => "Thank you for signing up!"
-     )
-end
+    :from => twilioNumber,
+    :to => "+1" + phone_number,
+    :body => "Hey, it's Sophie. We need to talk."
+    )
+  end
 
   private
   # @param :user [Symbol] the user key

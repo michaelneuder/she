@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   get "/about", to: 'static_pages#about'
   post '/twilio/send_message', to: 'twilio#send_message'
-  post '/user/send_message', to: 'user#send_message'
+  get '/users/send_message', to: 'users#send_message'
   resources :users
 
   get '/signed_up', to: 'static_pages#signed_up'

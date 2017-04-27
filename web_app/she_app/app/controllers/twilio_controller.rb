@@ -6,7 +6,7 @@ class TwilioController < ApplicationController
     # @param ENV [Hash] holds environmental variables
     # @note  Sends message to 
     def send_message
-        phone_number = params[:phone_number]
+        phone_number = ENV['clientNumber']
         twilioSID = ENV['twilioAccountSID']
         twilioAuthToken = ENV['twilioAuthToken']
         twilioNumber = ENV['twilioNumber']
