@@ -9,7 +9,6 @@
       cookie     : true,
       xfbml      : true  // parse XFBML
     });
-
     // authorization
     FB.Event.subscribe('auth.authResponseChange', function(response){
      if (response.status === 'connected'){
@@ -20,7 +19,6 @@
     } else {
         document.getElementById("message").innerHTML +=  "<br>Logged Out";
     }});};
-
     function Login(){
         FB.login(function(response) {
            if (response.authResponse){
@@ -28,8 +26,6 @@
             } else {
              console.log('User cancelled login or did not fully authorize.');
            }},{scope: 'email,user_photos,user_videos,publish_actions'});}
-
-
   function getUserInfo() {
         FB.api('/me', function(response) {
           var str="<b>Name</b> : "+response.name+"<br>";
@@ -41,17 +37,14 @@
           str +="<input type='button' value='Logout' onclick='Logout();'/>";
           document.getElementById("status").innerHTML=str;
     });}
-
     function getPhoto(){
       FB.api('/me/picture?type=normal', function(response) {
-          var str="<br/><b>Pic</b> : <img src='"+response.data.url+"'/>";
+          var str="<br/><b></b> <img src='"+response.data.url+"'/>";
           document.getElementById("status").innerHTML+=str;
     });}
-
     function Logout(){
         FB.logout(function(){document.location.reload();});
     }
-
   // Load the SDK asynchronously
   (function(d){
      var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
@@ -60,7 +53,6 @@
      js.src = "//connect.facebook.net/en_US/all.js";
      ref.parentNode.insertBefore(js, ref);
    }(document));
-
    function postTimeline(){
      FB.api('/me/feed', 'post', {message: 'test post10'});
    }
@@ -82,7 +74,6 @@
       if (response && !response.error) {
         console.log("yes!")
       }});}
-
     function get_like_number(){
       FB.api(
     "/114054302473773/likes",
@@ -90,7 +81,6 @@
       if (response && !response.error) {
         console.log(response)
       }});}
-
    function get_id(){
    FB.api(
     "/",
@@ -106,7 +96,6 @@
          if (response && !response.error) {
            console.log("yes!")
          }}}});}
-
 function facebook_send_message(to) {
     FB.ui({
         app_id:'1395971467128300',
@@ -117,16 +106,19 @@ function facebook_send_message(to) {
         message: 'a custom message',
         description:'this is a test message'
     });}
-
 </script>
+<div id="status">
+  <button id="loginButton" onclick="Login()">Log In</button>
+  <br>
+</div>
+
 <div id='page'>
+	
+
+
 <div align="center">
 <h2 id='title'>facebook</h2>
 
-<div id="status">
-  <button onclick="Login()">log in</button>
-  <br>
-</div>
 
 <script>
 function myFacebookLogin() {
@@ -141,10 +133,13 @@ function myFacebookLogin() {
 </div>
 
 <input type="text" name="txt" id="txt"/>
-<button onclick="postTimelineCustom()"/>post message</button><br>
+<button id="postMessage" onclick="postTimelineCustom()"/>Post Message</button><br>
+<br><br><br><br>
 <button onclick="get_id()"/>like test</button><br>
-<button onclick="facebook_send_message()"/>send fb message</button><br>
 <button onclick="get_like_number()"/>like own profile picture</button>
+<br><br><br>
+<button id="sendMessage" onclick="facebook_send_message()"/>Send Message</button><br>
+
 
 </div>
 </body>
