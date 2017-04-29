@@ -66,6 +66,8 @@ class UsersController < ApplicationController
     :to => "+1" + phone_number,
     :body => "Hey, it's Sophie. We need to talk."
     )
+
+    redirect_to user_path
   end
 
   private
