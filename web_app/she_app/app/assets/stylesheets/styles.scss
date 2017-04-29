@@ -471,10 +471,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
 }
 
-// Sign up form error messages
+// ==============================
+//        ERROR MESSAGES
+// ==============================
+// General signup or login error messages
 .error-list {
     color: rgb(255,100,100);
     font-size: 1.2em;
+}
+.login-error {
+    margin-left: 10%;
 }
 
 // ==============================

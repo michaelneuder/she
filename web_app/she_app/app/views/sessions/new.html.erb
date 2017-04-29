@@ -12,6 +12,10 @@
           <%= f.label :password %>
           <%= f.password_field :password %>
 
+            <% if flash.now[:danger] %>
+                <div class="error-list login-error"><%= flash.now[:danger] %></div>
+            <% end %>
+
           <%= f.submit "Login", class: "btn-lg" %>
         <% end %>
         <p>
