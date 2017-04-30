@@ -53,9 +53,9 @@ h1, h2, h3, h4, h5, h6 {
     p {
       border-top: 4px solid $dark-gray;
       color: $dark-gray;
-      padding-top: 5px;
+      padding-top: 20px;
       margin: 0;
-      font-size: 2em;
+      font-size: 1.8em;
     }
   }
 
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $dark-gray;
 
     h1 {
-      padding-top: 15%;
+      padding-top: 3%;
       color: white;
       padding-bottom: 5px;
       margin-bottom: 0px;
@@ -73,13 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     p {
       color: white;
       border-top: 4px solid white;
-      padding-top: 5px;
+      padding-top: 20px;
       margin: 0;
-      font-size: 2em;
+      font-size: 1.8em;
     }
 
     img {
-      padding-top: 5%;
+      padding-top: 0%;
       padding-left: 15%;
       height: 70%;
       width: auto;
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
       color: black;
-      margin-top: 18%;
+      margin-top: 4%;
       padding-bottom: 5px;
       margin-bottom: 0px;
       font-size: 3em;
@@ -100,9 +100,9 @@ h1, h2, h3, h4, h5, h6 {
     p {
       color: black;
       border-top: 4px solid black;
-      padding-top: 5px;
+      padding-top: 20px;
       margin: 0;
-      font-size: 2em;
+      font-size: 1.8em;
     }
   }
 
@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   h1 {
     color: rgb(255,192,203);
     font-size: 6em;
-    margin-top: 7em;
+    margin-top: 3em;
     margin-bottom: 10px;
   }
 
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1000px) {
   .center-lg {
     h1 {
-      margin-top: 3em;
+      margin-top: 10%;
     }
   }
 }
@@ -430,11 +430,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .row-btn {
-  margin-top: 7em;
+  margin-top: 3em;
 }
 
 .row-btn2 {
-  margin-top: 7em;
+  margin-top: 3em;
 }
 
 .bubble1 {

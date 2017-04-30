@@ -83,10 +83,32 @@ namespace :dm do
       config.access_token_secret = "XtoF6sJPK8e1WLlCnL0RiTyAShO2NKv4g4ks3ZEp11YXX"
     end
 
+    # puts "These are the receive times"
+    # puts receive_times
+    # receive_times.each do |name, key|
+    #   puts name + key[0]
+    #   puts send_times.include?(name)
+    # end
     receive_times.each do |name, arr|
-      if arr[0] > send_times[name][0]
-        response = bot.say(arr[1])
-        client.create_direct_message(name, response)
+      puts "This is " + name
+      if send_times.include?(name)
+        puts "First time" + arr[0]
+        puts "Second send time" + send_times[name][0]
+        arr[0] = Time.parse(arr[0])
+        send_times[name][0] = Time.parse(send_times[name][0])
+        if arr[0] > send_times[name][0]
+          puts "Time is greater than send time"
+          response5 = bot.say(arr[1])
+          puts response5
+          puts "Sent to" + name
+          client.create_direct_message(name, response5)
+        else
+          puts "Time is not greater"
+        end
+      else
+        puts "Obligatory hey"
+        puts "Sent to" + name
+        client.create_direct_message(name, "Heyyyy :)")
       end
     end
   end
