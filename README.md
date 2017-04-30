@@ -106,3 +106,6 @@ $bin/rails server
 
 ## Twilio setup/info
 * config/contacts has usernames and numbers
+
+## Used Michael Hartl's rails tutorial heavily for reference.
+[Rails Tutorial](https://www.railstutorial.org/)
