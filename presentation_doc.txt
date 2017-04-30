@@ -1,0 +1,19 @@
+presentation:
+
+introductions - w/o titles
+nick - welcome/intro
+
+slides:
+nischay - db, methodology, vcs
+bum - proj tracker, Rails
+alex - testing, autodoc
+mike - heroku, challenges
+
+demo:
+website home page
+sign up page
+twitter demo - alex
+profile page
+  -text - nick
+  -facebook - mike
+  -chat - mike
