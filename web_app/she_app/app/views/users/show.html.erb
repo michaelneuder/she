@@ -3,20 +3,21 @@
   <div class="layer">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h1><%= @user.name %></h1>
-        <%= link_to "Edit Profile", edit_user_path(current_user) %>
-        <h2><%= @user.email %></h2>
-        <h2><%= @user.phone_number %></h2>
-        <h2><%= @user.twitter_handle %></h2>
-        <p class="about-text">
-        </p>
+        <h1><%= @user.name %>
+          <span class="edit_profile">
+            <%= link_to "Edit", edit_user_path(current_user) %>
+          </span>
+        </h1>
       </div>
-      <div class="col-md-6 col-md-offset-3">
-        <p>
-        <%= link_to "Text me", users_send_message_path %> <br><br>
-        <%= link_to "facebook", facebook_index_path %> <br><br>
-        <%= link_to "chat", chat_index_path %>
-        </p>
+      <div class="col-md-4 col-md-offset-4">
+        <div class="user-features">
+          <%= link_to image_tag("text_profile.png"), users_send_message_path %>
+            <p>Get me to text you</p>
+          <%= link_to image_tag("fb_circle.png"), facebook_index_path %>
+            <p>Get me to post on your wall</p>
+          <%= link_to image_tag("user_chat.png"), chat_index_path %>
+            <p>Come chat with me</p>
+        </div>
       </div>
     </div>
   </div>
