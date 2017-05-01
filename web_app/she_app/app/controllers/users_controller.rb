@@ -11,6 +11,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
   # @param user_params [Hash] the post parameters
   # @note A route to create a new user. On user save follow the user's twitter account. If the login fails, generate a the signup page again.
   def create
