@@ -148,7 +148,12 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         font-size: 1.5em;
     }
+
     // User settings
+    .user-settings {
+        display: block;
+        font-size: 1.5em;
+    }
   }
   // ======================================================
   //                   NEW USER BLOCKS
@@ -484,15 +489,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // ==============================
-//        ERROR MESSAGES
+//        FLASH MESSAGES
 // ==============================
-// General signup or login error messages
+// General messages for signup or login errrors or successes
 .error-list {
     color: rgb(255,100,100);
     font-size: 1.2em;
 }
 .login-error {
     margin-left: 10%;
+}
+.update-success {
+    color: rgb(100,255,100);
+    font-size: 1.2em;
 }
 
 // ==============================
