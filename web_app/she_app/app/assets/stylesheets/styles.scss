@@ -150,9 +150,43 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     // User settings
-    .user-settings {
-        display: block;
-        font-size: 1.5em;
+    form {
+
+        label {
+            color: white;
+            text-transform: uppercase;
+            padding-left: 10%;
+            margin-top: 15%;
+            font-size: 2em;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        input {
+            margin-left: 10%;
+            display: block;
+            width: 80%;
+            height: 20%;
+
+            &:focus {
+                box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
+            }
+        }
+
+        .btn-lg{
+            margin-top: 2%;
+        }
+
+        #user_name,
+        #user_email,
+        #user_twitter_handle,
+        #user_phone_number,
+        #user_password,
+        #user_password_confirmation
+        {
+            height: 40px;
+            border: 3px solid white;
+            margin-bottom: 2%;
+        }
     }
   }
   // ======================================================
@@ -197,7 +231,12 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 2%;
       }
 
-      #user_name, #user_email, #user_password, #user_password_confirmation, #user_twitter_handle{
+      #user_name,
+      #user_email,
+      #user_password,
+      #user_password_confirmation,
+      #user_twitter_handle,
+      #user_phone_number {
         height: 40px;
         border: 3px solid white;
         margin-bottom: 2%;
