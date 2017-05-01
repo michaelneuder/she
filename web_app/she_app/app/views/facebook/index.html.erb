@@ -107,10 +107,7 @@ function facebook_send_message(to) {
         description:'this is a test message'
     });}
 </script>
-<div id="status">
-  <button id="loginButton" onclick="Login()">Log In</button>
-  <br><br>
-</div>
+
 
 <div id='page'>
 
@@ -118,26 +115,21 @@ function facebook_send_message(to) {
 
 <div align="center">
 <h2 id='title'>facebook</h2>
-
+<div id="status">
+  <button id="loginButton" onclick="Login()">Log In</button>
+  <br><br>
+</div>
 
 <script>
 function myFacebookLogin() {
   FB.login(function(){}, {scope: 'publish_actions'});
 }
 </script>
-<!-- <button onclick="myFacebookLogin()">allow</button> -->
-
-<!-- <div id='postTimeline'>
-  <button onclick="postTimeline()"> post to your timeline </button>
-</div> -->
 </div>
 
 <input type="text" name="txt" id="txt" placeholder="What's on your mind?"/>
-<button id="postMessage" onclick="postTimelineCustom()"/>Post</button><br>
+<button id="postMessage" onclick="postTimelineCustom()"/>Post</button>
 <br><br><br><br>
-<!-- <button onclick="get_id()"/>like test</button><br> -->
-<!-- <button onclick="get_like_number()"/>like own profile picture</button> -->
-<br><br>
 <button id="sendMessage" onclick="facebook_send_message()"/>Send a message</button><br>
 
 
