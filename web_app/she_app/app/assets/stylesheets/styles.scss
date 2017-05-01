@@ -150,6 +150,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     // User settings
+    .update-success {
+        color: rgb(100,200,100);
+        font-size: 0.5em;
+    }
     form {
 
         label {
@@ -537,10 +541,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .login-error {
     margin-left: 10%;
-}
-.update-success {
-    color: rgb(100,255,100);
-    font-size: 1.2em;
 }
 
 // ==============================
