@@ -67,7 +67,7 @@ class UsersController < ApplicationController
     :body => "Hey, it's Sophie. We need to talk."
     )
 
-    redirect_to user_path
+    redirect_to root_path
   end
 
   private
