@@ -1,4 +1,35 @@
-<h1> Edit your page </h1>
-<h2><%= @user.email %></h2>
-<h2><%= @user.phone_number %></h2>
-<h2><%= @user.twitter_handle %></h2>
+<% provide(:title, "Edit user") %>
+<div class="container-fluid block block-user-1">
+  <div class="layer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Update profile</h1>
+        <div class="user-settings">
+        <%= form_for @user do |f| %>
+          <%= render 'shared/error_messages' %>
+
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'settings-form' %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'settings-form' %>
+
+          <%= f.label :phone_number %>
+          <%= f.phone_field :phone_number, class: 'settings-form' %>
+
+          <%= f.label :twitter_handle %>
+          <%= f.text_field :twitter_handle, class: 'settings-form' %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'settings-form' %>
+
+          <%= f.label :password_confirmation, "Confirmation" %>
+          <%= f.password_field :password_confirmation, class: 'settings-form' %>
+
+          <%= f.submit "Save changes", class: "btn-lg" %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

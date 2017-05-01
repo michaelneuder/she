@@ -12,7 +12,7 @@
           <%= f.label :password %>
           <%= f.password_field :password %>
 
-            <% if flash.now[:danger] %>
+            <% if flash[:danger] %>
                 <div class="error-list login-error"><%= flash.now[:danger] %></div>
             <% end %>
 

@@ -10,6 +10,6 @@ class User < ApplicationRecord
   validates :phone_number, presence: true, length: { is: 10 },
                     format: { with: PHONE_REGEX }
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :twitter_handle, presence: true, length: { minimum: 1}, format: { with: TWITTER_HANDLE }
 end
