@@ -13,13 +13,12 @@ she
 
 ## Project description:
 Do you ever get tired of being asked if you are still single? Are your parents
-waiting anxiously for you to bring someone home?
-Are your friends pestering you to find someone? Then she is the app for you!
-This mobile and web app will simulate a girlfriend by creating fake social media
-accounts for our users. The user will recieve photos, texts, phone calls,
-snapchats, etc.
-from this virtual girlfriend. A trick so convincing everyone will believe that
-she is real. Take it one step farther and become a premium member to request in
+waiting anxiously for you to bring someone home? Are your friends pestering 
+you to find someone? Then she is the app for you! This mobile and web app will
+simulate a girlfriend by creating fake social media accounts for our users.
+The user will recieve photos, texts, phone calls, snapchats, etc. from this
+virtual girlfriend. A trick so convincing everyone will believe that she is
+real. Take it one step farther and become a premium member to request in
 person appearances at family events or parties, where other users will pretend
 to be your significant other. Who knows, maybe you will find a connection!
 
