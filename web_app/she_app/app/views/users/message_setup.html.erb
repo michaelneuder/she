@@ -1,0 +1,17 @@
+<% provide(:title, "Send Message") %>
+<div class="container-fluid block block-text-message">
+  <div class="layer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Send a Message</h1>
+        <%= form_for(:texts, url: users_send_message_path) do |f| %>
+
+          <%= f.label :Message %>
+          <%= f.text_field :Message %>
+
+          <%= f.submit "Send Message", class: "btn-lg" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

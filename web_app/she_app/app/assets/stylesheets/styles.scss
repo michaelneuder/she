@@ -124,6 +124,56 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   // ======================================================
+  //                     SEND MESSAGE BLOCKS
+  // ======================================================
+
+  &.block-text-message {
+    background: image-url("what_flowers.jpg");
+    background-size: cover;
+    padding: 0;
+    overflow-x: hidden;
+
+    h1{
+      padding-top: 10%;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    form {
+
+      label {
+        color: white;
+        text-transform: uppercase;
+        padding-left: 10%;
+        margin-top: 15%;
+        font-size: 2em;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      input {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+        height: 20%;
+
+        &:focus {
+          box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.75);
+        }
+      }
+
+      .btn-lg{
+        margin-top: 2%;
+      }
+
+      #texts_Message{
+        height: 40px;
+        border: 3px solid white;
+        margin-bottom: 2%;
+      }
+    }
+  }
+
+  // ======================================================
   //                     USER BLOCKS
   // ======================================================
   &.block-user-1 {
@@ -188,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 2%;
       }
 
-      #user_name, #user_email, #user_password, #user_password_confirmation, #user_twitter_handle{
+      #user_name, #user_email, #user_password, #user_password_confirmation, #user_twitter_handle, #texts_Message{
         height: 40px;
         border: 3px solid white;
         margin-bottom: 2%;
@@ -559,4 +609,11 @@ img.center_me {
 #buttons_profile{
   color: black;
   font-size: 18pt;
+}
+
+
+#texts_Message{
+  height: 40px;
+  border: 3px solid white;
+  margin-bottom: 2%;
 }

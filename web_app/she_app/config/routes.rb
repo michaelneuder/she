@@ -15,9 +15,10 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   get '/signup', to: 'users#new'
   get "/about", to: 'static_pages#about'
+  get "/message_setup/", to: "users#message_setup"
 
   post '/twilio/send_message', to: 'twilio#send_message'
-  get '/users/send_message', to: 'users#send_message'
+  post '/users/send_message', to: 'users#send_message'
   resources :users
 
   get '/signed_up', to: 'static_pages#signed_up'

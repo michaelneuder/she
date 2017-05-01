@@ -53,6 +53,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def message_setup
+  end
+
   def send_message
     phone_number = ENV['clientNumber']
     twilioSID = ENV['twilioAccountSID']
@@ -64,10 +67,10 @@ class UsersController < ApplicationController
     @client.account.sms.messages.create(
     :from => twilioNumber,
     :to => "+1" + phone_number,
-    :body => "Hey, it's Sophie. We need to talk."
+    :body => params["texts"]["Message"]
     )
 
-    redirect_to root_path
+    redirect_to message_setup_path
   end
 
   private
