@@ -2,6 +2,7 @@
 <body>
 <div id="fb-root"></div>
 <script>
+// initializing facebook api sessino
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1395971467128300',
@@ -19,6 +20,7 @@
     } else {
         document.getElementById("message").innerHTML +=  "<br>Logged Out";
     }});};
+
     function Login(){
         FB.login(function(response) {
            if (response.authResponse){
@@ -26,13 +28,9 @@
             } else {
              console.log('User cancelled login or did not fully authorize.');
            }},{scope: 'email,user_photos,user_videos,publish_actions'});}
-  function getUserInfo() {
+    function getUserInfo() {
         FB.api('/me', function(response) {
           var str="<b>Name</b> : "+response.name+"<br>";
-          // str +="<b>Link: </b>"+response.link+"<br>";
-          // str +="<b>Username:</b> "+response.username+"<br>";
-          // str +="<b>id: </b>"+response.id+"<br>";
-          // str +="<b>Email:</b> "+response.email+"<br>";
           str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
           str +="<input type='button' value='Logout' onclick='Logout();'/>";
           document.getElementById("status").innerHTML=str;
@@ -53,50 +51,28 @@
      js.src = "//connect.facebook.net/en_US/all.js";
      ref.parentNode.insertBefore(js, ref);
    }(document));
+
    function postTimeline(){
+     // hard coded post
      FB.api('/me/feed', 'post', {message: 'test post10'});
    }
+
+   // custom post using user input
    function postTimelineCustom(){
      var message = retrieve('txt');
      FB.api('/me/feed', 'post', {message: message});
    }
+
+   // grabs user input
    function retrieve(id) {
        var txtbox = document.getElementById(id);
        var value = txtbox.value;
        txtbox.value = ""
        return value
    }
-   function like() {
-     FB.api(
-    "/114054302473773/likes",
-    "POST",
-    function (response) {
-      if (response && !response.error) {
-        console.log("yes!")
-      }});}
-    function get_like_number(){
-      FB.api(
-    "/114054302473773/likes",
-    function (response) {
-      if (response && !response.error) {
-        console.log(response)
-      }});}
-   function get_id(){
-   FB.api(
-    "/",
-    {
-        "id": "https:\/\/www.facebook.com\/photo.php?fbid=114054302473773&set=a.114054315807105.1073741826.100016076114632&type=3&theater"
-    },
-    function (response) {
-      if (response && !response.error) {
-        console.log(response)
-       console.log("/" + response + "/likes"),
-       "POST",
-       function (response) {
-         if (response && !response.error) {
-           console.log("yes!")
-         }}}});}
-function facebook_send_message(to) {
+
+   // message sending
+   function facebook_send_message(to) {
     FB.ui({
         app_id:'1395971467128300',
         method: 'send',
@@ -108,11 +84,7 @@ function facebook_send_message(to) {
     });}
 </script>
 
-
 <div id='page'>
-
-
-
 <div align="center">
 <h2 id='title'>facebook</h2>
 <div id="status">
