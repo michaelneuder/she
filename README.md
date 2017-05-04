@@ -11,6 +11,11 @@ Michael Neuder, Chief Visionary (github: michaelneuder)
 ## Project title:
 she
 
+## Repo organization:
+- the rails app is in the folder web_app/she_app. this is where all the active code lives. 
+- to run the app locally, clone and navigate to the she_app directory and run: 'bin/rails server'
+- to test refrence the Testing.md file in the main directory. 
+
 ## Project description:
 Do you ever get tired of being asked if you are still single? Are your parents
 waiting anxiously for you to bring someone home? Are your friends pestering 
