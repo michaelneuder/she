@@ -11,6 +11,11 @@ Michael Neuder, Chief Visionary (github: michaelneuder)
 ## Project title:
 she
 
+## Repo organization:
+- the rails app is in the folder web_app/she_app. this is where all the active code lives. 
+- to run the app locally, look below in the To Run section
+- to test refrence the Testing.md file in the main directory. 
+
 ## Project description:
 Do you ever get tired of being asked if you are still single? Are your parents
 waiting anxiously for you to bring someone home? Are your friends pestering 
@@ -101,7 +106,6 @@ $bin/rails server
 
 ## Also Hosted on Heroku
 [Hosted web app](https://blooming-temple-89141.herokuapp.com/)
-#### It is about halfway to where I want it to be
 
 ## Twilio setup/info
 * config/contacts has usernames and numbers
